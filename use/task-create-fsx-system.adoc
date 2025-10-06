@@ -1,0 +1,245 @@
+---
+sidebar: sidebar 
+permalink: use/task-create-fsx-system.html 
+keywords: Amazon FSx for NetApp ONTAP, fsx, volumes, create system, delete system, access key, secret key, region, working environment, availability zones, discover, storage capacity, iops, throughput, security group, security, bluexp, NetApp Console 
+summary: 建立或發現 FSx for ONTAP檔案系統，以便從NetApp控制台新增和管理磁碟區和其他資料服務。 
+---
+= 建立或發現 FSx for ONTAP檔案系統
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+建立或發現 FSx for ONTAP檔案系統，以便從NetApp控制台新增和管理磁碟區和其他資料服務。
+
+
+
+== 建立 FSx for ONTAP系統
+
+第一步是建立 FSx for ONTAP檔案系統。如果您已在 AWS 管理主控台中建立了 FSx for ONTAP檔案系統，則可以link:task-create-fsx-system.html#discover-an-existing-fsx-for-ontap-file-system["使用NetApp控制台發現它"]。
+
+.關於此任務
+建立檔案系統時會建立一個儲存虛擬機器。
+
+.開始之前
+在建立 FSx for ONTAP檔案系統之前，您需要：
+
+* IAM 角色的 ARN，該角色為 Workload Factory 提供建立 FSx for ONTAP檔案系統所需的權限。link:../requirements/task-setting-up-permissions-fsx.html["了解如何向 AWS 帳戶授予權限"^] 。
+* 您將在其中建立 FSx for ONTAP實例的區域和 VPC 資訊。
+
+
+
+
+== 建立 FSx for ONTAP檔案系統
+
+您可以使用「快速建立」或「進階建立」來建立 FSx for ONTAP檔案系統。您也可以使用 Codebox 中提供的以下工具：REST API、CloudFormation 和 Terraform。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["了解如何使用 Codebox 實現自動化"^] 。
+
+
+NOTE: 使用 Codebox 的 Terraform 時，您複製或下載的程式碼會隱藏 `fsxadmin`和 `vsadmin`密碼。運行代碼時您需要重新輸入密碼。
+
+[role="tabbed-block"]
+====
+.快速創建
+--
+快速建立使您能夠使用建議的最佳實踐配置。建立 FSx for ONTAP檔案系統後，您可以變更大多數設定。
+
+.步驟
+. 從NetApp控制台選單中，選擇“*儲存*”，然後選擇“*管理*”。
+. 從系統頁面選擇*新增系統*。
+. 選擇 *Amazon Web Services* 作為位置，然後為Amazon FSx for NetApp ONTAP選擇 *新增*。
+. 在建立 FSx for ONTAP檔案系統頁面上，選擇*快速建立*。
++
+您也可以載入已儲存的配置。
+
+. 在檔案系統常規配置下，提供以下內容：
++
+.. *AWS 憑證*：選擇新增 AWS 憑證或繼續而不新增憑證。無需憑證，您可以從 Codebox 複製並下載部分完整的程式碼。該程式碼可以像模板一樣使用，您可以在運行程式碼之前填寫缺少的資訊（例如，憑證）或自訂某些資料。
+.. *檔案系統名稱*：輸入檔案系統的名稱。
+.. *部署拓樸*：選擇部署拓樸。
++
+*** 擴展拓撲是指使用一個檔案系統進行資料分發，並且可以增加其大小以適應資料成長。
+*** 橫向擴展拓撲是指使用多個檔案系統進行資料分發。
+
+
+.. *HA 對*：輸入 HA 對的數量。
++
+*** 對於擴充部署，您只能擁有一個 HA 對。
+*** 對於橫向擴展部署，您可以擁有 2 到 12 個 HA 對。
+
+
+.. *部署類型*：選擇部署類型。
++
+*** 單可用區 (Single-AZ) 部署：透過監控硬體故障並在發生故障時自動更換基礎設施元件來確保可用性。透過在可用區域內自動複製資料來保護其免受組件故障的影響，從而實現高耐用性。
+*** 多可用區 (Multi-AZ) 部署：即使可用區不可用，也能提供資料的持續可用性。多可用區檔案系統支援單可用區檔案系統的所有可用性和持久性功能。多可用區檔案系統專為業務關鍵型生產工作負載而設計，這些工作負載需要對共用ONTAP檔案資料具有高可用性，並且需要跨可用區內建複製的儲存。
+
+
+.. *標籤*：您可以選擇新增最多 50 個標籤。
+
+
+. 在「網路和安全性」下的「區域和 VPC」欄位中，選擇檔案系統的區域和 VPC。
+. 在*檔案系統詳細資訊*下，提供以下內容：
++
+.. *SSD儲存容量*：輸入儲存容量並選擇儲存容量單位。
+.. * ONTAP憑證*：輸入您的ONTAP使用者名稱和密碼。
+.. *SMB/CIFS 設定*：可選。如果您打算使用 SMB/CIFS 協定存取卷，則必須在建立檔案系統期間為儲存 VM 配置 Active Directory。提供為此檔案系統建立的儲存虛擬機器的以下詳細資訊。
++
+... *要加入的 Active Directory 網域*：輸入 Active Directory 的完全限定網域名稱 (FQDN)。
+... *DNS IP 位址*：輸入最多三個 DNS IP 位址，以逗號分隔。
+... *SMB 伺服器 NetBIOS 名稱*：輸入要為儲存 VM 建立的 Active Directory 電腦物件的 SMB 伺服器 NetBIOS 名稱。這是此儲存虛擬機器在 Active Directory 中的名稱。
+... *使用者名稱*：輸入您現有的 Active Directory 中的服務帳戶的使用者名稱。
++
+不要包含域前綴或後綴。為了 `EXAMPLE\ADMIN`， 使用 `ADMIN`。
+
+... *密碼*：輸入服務帳號的密碼。
+... *組織單位*：（選用）輸入您打算為 FSx for ONTAP建立電腦帳戶的組織單位的名稱。  OU 是您想要加入檔案系統的組織單位的可分辨路徑名。
+... *委派管理員群組*：（選用）輸入 Active Directory 中可以管理檔案系統的群組的名稱。
++
+如果您使用的是 AWS Managed Microsoft AD，則必須指定群組，例如 AWS Delegated FSx Administrators、AWS Delegated Administrators 或對 OU 具有委派權限的自訂群組。
+
++
+如果您要加入自我管理的 AD，請使用 AD 中的群組名稱。預設群組是 `Domain Admins`。
+
+
+
+
+
+. 開啟*摘要*來查看您定義的配置。如果需要，您可以在儲存或建立檔案系統之前更改任何設定。
+. 儲存或建立檔案系統。
+
+
+.結果
+如果您建立了檔案系統，則新的 FSx for ONTAP設定將顯示在「系統」頁面上。
+
+您可以透過多種方式管理 FSx for ONTAP檔案系統，例如從NetApp控制台中的工作負載、使用ONTAP系統管理員以及使用 AWS CloudFormation。了解如何link:task-manage-fsx-systems.html["管理 FSx for ONTAP檔案系統"] 。
+
+--
+.進階創建
+--
+使用進階創建，您可以設定所有設定選項，包括可用性、安全性、備份和維護。
+
+.步驟
+. 從NetApp控制台選單中，選擇“*儲存*”，然後選擇“*管理*”。
+. 從系統頁面選擇*新增系統*。
+. 選擇 *Amazon Web Services* 作為位置，然後為Amazon FSx for NetApp ONTAP選擇 *新增*。
+. 在建立 FSx for ONTAP頁面上，選擇 *進階建立*。
++
+您也可以載入已儲存的配置。
+
+. 在檔案系統常規配置下，提供以下內容：
++
+.. *AWS 憑證*：選擇在 Workload Factory 中新增 AWS 憑證或繼續不使用憑證。
+.. *檔案系統名稱*：輸入檔案系統的名稱。
+.. *部署拓樸*：選擇部署拓樸。
++
+*** 擴展拓撲是指使用一個檔案系統進行資料分發，並且可以增加其大小以適應資料成長。
+*** 橫向擴展拓撲是指使用多個檔案系統進行資料分發。
+
+
+.. *HA 對*：輸入 HA 對的數量。
++
+*** 對於擴充部署，您只能擁有一個 HA 對。
+*** 對於橫向擴展部署，您可以擁有 2 到 12 個 HA 對。
+
+
+.. *部署類型*：選擇部署類型。
++
+*** 單可用區 (Single-AZ) 部署：透過監控硬體故障並在發生故障時自動更換基礎設施元件來確保可用性。透過在可用區域內自動複製資料來保護其免受組件故障的影響，從而實現高耐用性。
+*** 多可用區 (Multi-AZ) 部署：即使可用區不可用，也能提供資料的持續可用性。多可用區檔案系統支援單可用區檔案系統的所有可用性和持久性功能。多可用區檔案系統專為業務關鍵型生產工作負載而設計，這些工作負載需要對共用ONTAP檔案資料具有高可用性，並且需要跨可用區內建複製的儲存。
+
+
+.. *標籤*：您可以選擇新增最多 50 個標籤。
+
+
+. 在網路和安全下，提供以下內容：
++
+.. *區域和 VPC*：選擇檔案系統的區域和 VPC。
+.. *安全群組*：建立或使用現有的安全群組。
+.. *可用區域*：選擇可用區域和子網路。
++
+*** 對於叢集配置節點 1：選擇可用區域和子網路。
+*** 對於叢集配置節點 2：選擇可用區域和子網路。
+
+
+.. *VPC 路由表*：選擇 VPC 路由表以啟用用戶端對磁碟區的存取。
+.. *端點 IP 位址範圍*：選擇*VPC 以外的浮動 IP 位址範圍*或*輸入 IP 位址範圍*並輸入 IP 位址範圍。
+.. *加密*：從下拉式選單中選擇加密金鑰名稱。
+
+
+. 在檔案系統詳細資訊下，提供以下資訊：
++
+.. *SSD儲存容量*：輸入儲存容量並選擇儲存容量單位。
+.. *Provisioned IOPS*：選擇 *Automatic* 或 *User-provisioned*。
+.. *每個 HA 對的吞吐容量*：選擇每個 HA 對的吞吐容量。
+.. * ONTAP憑證*：輸入您的ONTAP使用者名稱和密碼。
+.. *儲存 VM 憑證*：輸入您的使用者名稱。密碼可以特定於此檔案系統，或者您可以使用輸入的ONTAP憑證相同的密碼。
+.. *SMB/CIFS 設定*：可選。如果您打算使用 SMB/CIFS 協定存取卷，則必須在建立檔案系統期間為儲存 VM 配置 Active Directory。提供為此檔案系統建立的儲存虛擬機器的以下詳細資訊。
++
+... *要加入的 Active Directory 網域*：輸入 Active Directory 的完全限定網域名稱 (FQDN)。
+... *DNS IP 位址*：輸入最多三個 DNS IP 位址，以逗號分隔。
+... *SMB 伺服器 NetBIOS 名稱*：輸入要為儲存 VM 建立的 Active Directory 電腦物件的 SMB 伺服器 NetBIOS 名稱。這是此儲存虛擬機器在 Active Directory 中的名稱。
+... *使用者名稱*：輸入您現有的 Active Directory 中的服務帳戶的使用者名稱。
++
+不要包含域前綴或後綴。為了 `EXAMPLE\ADMIN`， 使用 `ADMIN`。
+
+... *密碼*：輸入服務帳號的密碼。
+... *組織單位*：（選用）輸入您打算為 FSx for ONTAP建立電腦帳戶的組織單位的名稱。  OU 是您想要加入檔案系統的組織單位的可分辨路徑名。
+... *委派管理員群組*：（選用）輸入 Active Directory 中可以管理檔案系統的群組的名稱。
++
+如果您使用的是 AWS Managed Microsoft AD，則必須指定群組，例如 AWS Delegated FSx Administrators、AWS Delegated Administrators 或對 OU 具有委派權限的自訂群組。
+
++
+如果您要加入自我管理的 AD，請使用 AD 中的群組名稱。預設群組是 `Domain Admins`。
+
+
+
+
+
+. 在備份和維護下，提供以下內容：
++
+.. *FSx for ONTAP Backup*：預設啟用每日自動備份。如果需要，請停用。
++
+... *自動備份保留期*：輸入保留自動備份的天數。
+... *每日自動備份視窗*：選擇*無偏好*（為您選擇每日備份開始時間）或*選擇每日備份的開始時間*並指定開始時間。
+... *每週維護視窗*：選擇*無偏好*（為您選擇每週維護視窗的開始時間）或*選擇 30 分鐘每週維護視窗的開始時間*並指定開始時間。
+
+
+
+
+. 儲存或建立檔案系統。
+
+
+.結果
+如果您建立了檔案系統，則新的 FSx for ONTAP設定將顯示在「系統」頁面上。
+
+您可以透過多種方式管理 FSx for ONTAP檔案系統，例如從NetApp控制台中的工作負載、使用ONTAP系統管理員以及使用 AWS CloudFormation。了解如何link:task-manage-fsx-systems.html["管理 FSx for ONTAP檔案系統"] 。
+
+--
+====
+
+
+== 發現現有的 FSx for ONTAP檔案系統
+
+如果您之前在NetApp控制台中提供了 AWS 憑證，則可以從可發現系統頁面自動發現 FSx for ONTAP檔案系統。您也可以查看可用的資料服務。
+
+.關於此任務
+您只能在一個帳戶內發現一次 FSx for ONTAP檔案系統並將其附加到一個工作區。稍後可以刪除檔案系統並將其重新關聯到不同的工作區。
+
+.步驟
+. 從NetApp控制台選單中，選擇 *儲存*，然後選擇 *管理*，再選擇 *可發現的系統*。
+. 顯示已發現的 FSx for ONTAP檔案系統的數量。選擇*發現*。
+. 選擇一個或多個檔案系統，然後選擇「發現」將其新增至「系統」頁面。
+
+
+[NOTE]
+====
+* 如果您選擇未命名的集群，您將收到輸入該集群名稱的提示。
+* 如果您選擇的叢集沒有從控制台管理 FSx for ONTAP檔案系統所需的憑證，您將收到選擇具有所需權限的憑證的提示。
+
+
+====
+.結果
+控制台在系統頁面上顯示您發現的 FSx for ONTAP檔案系統。您可以透過多種方式管理 FSx for ONTAP檔案系統，例如從NetApp控制台中的工作負載、使用ONTAP系統管理員以及使用 AWS CloudFormation。了解如何link:task-manage-fsx-systems.html["管理 FSx for ONTAP檔案系統"] 。

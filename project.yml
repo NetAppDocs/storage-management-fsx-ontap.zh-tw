@@ -1,0 +1,46 @@
+---
+settings:
+  name: Amazon FSx for NetApp ONTAP
+  internal:
+    pdf_enabled: true
+    lipi_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: zh-tw,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-cn
+sidebar:
+  entries:
+  - title: Amazon FSx for NetApp ONTAP文檔
+    url: "/index.html"
+  - title: 發行說明
+    url: "/whats-new.html"
+  - title: 開始
+    entries:
+    - title: 了解適用Amazon FSx for NetApp ONTAP
+      url: "/start/concept-fsx-aws.html"
+    - title: 快速啟動
+      url: "/start/task-getting-started-fsx.html"
+    - title: 設定權限
+      url: "/requirements/task-setting-up-permissions-fsx.html"
+    - title: 建立或發現 FSx for ONTAP檔案系統
+      url: "/use/task-create-fsx-system.html"
+  - title: 管理 FSx for ONTAP檔案系統
+    url: "/use/task-manage-fsx-systems.html"
+  - title: 使用 Tracker 監控操作
+    url: "/use/task-monitor-operations.html"
+  - title: 從項目中刪除檔案系統
+    url: "/use/task-remove-filesystem.html"
+  - title: 刪除 FSx for ONTAP檔案系統
+    url: "/use/task-delete-fsx-system.html"
+  - title: 知識和支持
+    entries:
+    - title: 註冊以獲得支持
+      url: "/support/task-support-registration.html"
+    - title: 獲取協助
+      url: "/support/task-get-help.html"
+  - title: 法律聲明
+    url: "/legal-notices.html"
+product-family:
+  name: Storage Management
+  repo: storage-management-family

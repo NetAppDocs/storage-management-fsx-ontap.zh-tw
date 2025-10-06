@@ -1,0 +1,15 @@
+= 維護視窗開始時間
+:allow-uri-read: 
+
+
+
+
+=== 維護視窗開始時間
+
+什麼時候link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["創造工作環境"]，您可以指定每週 30 分鐘維護窗口的開始時間，以確保維護不會與關鍵業務活動衝突。
+
+
+
+=== 使用 FlexGroups 分送卷數據
+
+建立磁碟區時，您可以透過建立FlexGroup在磁碟區之間分發資料來實現資料最佳化。

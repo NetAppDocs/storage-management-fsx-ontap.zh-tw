@@ -1,0 +1,15 @@
+= FSx for ONTAP與BlueXP Workload Factory 中的儲存集成
+:allow-uri-read: 
+
+
+
+
+=== FSx for ONTAP與BlueXP Workload Factory 中的儲存集成
+
+FSx for ONTAP檔案系統管理任務（例如新增磁碟區、擴充檔案系統容量和管理儲存虛擬機器）現在由BlueXP workload factory進行管理，這是NetApp和Amazon FSx for NetApp ONTAP提供的一項新服務。您可以像以前一樣使用現有的憑證和權限。不同之處在於，您現在可以從BlueXP workload factory執行更多操作來管理您的檔案系統。當您從BlueXP畫布開啟 FSx for ONTAP工作環境時，您將直接進入BlueXP workload factory。
+
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html#features["了解BlueXP workload factory中的 FSx for ONTAP功能"^]
+
+如果您正在尋找「進階視圖」選項，該選項可讓您使用ONTAP系統管理員管理 FSx for ONTAP檔案系統，那麼您現在可以在選擇工作環境後從BlueXP畫布中找到該選項。
+
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-fsx-ontap/main/media/screenshot-system-manager.png["選擇工作環境後， BlueXP Canvas 右側面板的螢幕截圖，其中顯示了系統管理員選項。"]

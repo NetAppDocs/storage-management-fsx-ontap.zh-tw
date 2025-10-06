@@ -1,0 +1,111 @@
+---
+sidebar: sidebar 
+permalink: start/concept-fsx-aws.html 
+keywords: Amazon FSx for NetApp ONTAP, volumes, aws, access key, secret key, cloud manager, NetApp Console, bluexp 
+summary: Amazon FSx for NetApp ONTAP是一項完全託管的服務，可讓客戶啟動和運行由 NetApp 的ONTAP儲存作業系統提供支援的檔案系統。 
+---
+= 了解適用Amazon FSx for NetApp ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["Amazon FSx for NetApp ONTAP"^]是一項完全託管的服務，允許客戶啟動和運行由NetApp ONTAP儲存作業系統提供支援的檔案系統。  FSx for ONTAP提供NetApp客戶在本機上使用的相同功能、效能和管理功能，同時具有原生 AWS 服務的簡單性、靈活性、安全性和可擴充性。
+
+
+
+== NetApp控制台
+
+可透過NetApp控制台存取Amazon FSx for NetApp ONTAP管理。
+
+NetApp控制台提供企業級跨本機和雲端環境的NetApp儲存和資料服務的集中管理。需要控制台才能存取和使用NetApp資料服務。作為管理介面，它使您能夠從一個介面管理許多儲存資源。控制台管理員可以控制企業內所有系統的儲存和服務的存取。
+
+您不需要許可證或訂閱即可開始使用NetApp控制台，並且只有當您需要在雲端部署控制台代理程式以確保與儲存系統或NetApp資料服務的連接時才需要付費。但是，一些可從控制台存取的NetApp資料服務是需要授權或基於訂閱的。
+
+詳細了解 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html["NetApp控制台"]。
+
+
+
+== 從NetApp控制台使用 FSx for ONTAP
+
+在NetApp控制台系統頁面，您可以建立和發現 FSx for ONTAP系統並使用系統管理員和其他NetApp服務。如果您要管理 FSx for ONTAP系統和在Amazon FSx for NetApp ONTAP上執行的工作負載，請使用 https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["NetApp工作負載工廠"^]。
+
+link:../use/task-creating-fsx-working-environment.html["了解如何從NetApp控制台建立和發現 FSx for ONTAP系統"^] 。
+
+
+
+== 特徵
+
+* 無需配置或管理儲存設備、軟體或備份。
+* 支援 CIFS、iSCSI、NFSv3、NFSv4.x、 https://docs.netapp.com/us-en/ontap/s3-config/ontap-version-support-s3-concept.html["S3"^]以及 SMB v2.0 - v3.1.1 協定。
+* 使用可用的不頻繁存取 (IA) 儲存層，實現低成本、幾乎無限的資料儲存容量。
+* 經過認證，可在包括 Oracle RAC 在內的延遲敏感應用程式上執行。
+* 選擇捆綁和現收現付定價。
+
+
+
+
+== NetApp控制台中的其他功能
+
+* 在標準模式下使用NetApp Console 時支援 FSx for ONTAP ，它利用NetApp Console SaaS 層提供完整功能。不支援_Restricted_模式和_private_模式。
+
+
+請參閱link:https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["NetApp控制台部署模式"^]了解更多。
+
+* 使用link:https://docs.netapp.com/us-en/console-family/["NetApp控制台"^]以及 AWS 中的控制台代理，您可以建立和管理磁碟區、複製資料以及將 FSx for ONTAP與NetApp雲端服務（例如NetApp資料分類和NetApp複製和同步）整合。
+* NetApp資料分類使用人工智慧 (AI) 驅動的技術，可協助您了解資料上下文並識別駐留在 FSx for ONTAP帳戶中的敏感資料。 https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["了解更多"^] 。
+* 使用NetApp Copy and Sync，您可以自動將資料遷移到雲端或本地的任何目標。 https://docs.netapp.com/us-en/data-services-copy-sync/concept-cloud-sync.html["了解更多"^]
+
+
+
+
+== 控制台代理程式和連結解鎖所有 FSx for ONTAP功能
+
+控制台代理程式和連結支援NetApp控制台和Amazon FSx for NetApp ONTAP工作環境之間的連線和信任關係。控制台代理程式是在您的雲端或本機網路中執行的NetApp軟體，並且連結使用 AWS Lambda 執行NetApp程式碼。您不需要控制台代理或連結即可在控制台中開始或建立 FSx for ONTAP系統，但您需要使用控制台代理或連結才能充分利用 FSx for ONTAP功能。
+
+您需要控制台代理或連結才能使用以下功能：
+
+* FSx for ONTAP檔案系統配置的良好架構狀態，可實現主動維護、可靠性和成本效益最佳化
+* NetApp自主勒索軟體防護 (ARP/AI)
+* 增強了 FSx for ONTAP檔案系統的整體容量可觀察性
+* 捲和儲存虛擬機器資料複製、管理和監控
+* SMB/CIFS 共用和 NFS 匯出策略設定和管理
+* FSx for ONTAP檔案系統上的 iSCSI 磁碟區管理
+* 建立和管理自訂保護 SLA 的快照策略
+* 增強 Inode 管理以實現自動容量管理
+* 容量自動成長以實現彈性擴展
+* 克隆創建和管理，用於即時、就地資料克隆
+* 直接從ONTAP顯示其他指標，例如ONTAP版本
+
+
+了解有關控制台代理和連結的更多資訊以及何時使用它們：
+
+* https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["了解有關控制台代理的更多信息"^] 。
+* https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["了解有關連結的更多信息"^] 。
+
+
+
+
+== 成本
+
+您的 FSx for ONTAP帳戶由 AWS 維護，而不是由NetApp維護。參考 https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["Amazon FSx for NetApp ONTAP入門指南"^]。
+
+使用 AWS 中的控制台代理或連結以及可選資料服務（例如NetApp資料分類和NetApp複製和同步）會產生額外費用。
+
+
+
+== 支持的區域
+
+https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["看看支援的亞馬遜區域。"^]
+
+
+
+== 獲取協助
+
+Amazon FSx for NetApp ONTAP是 AWS 第一方解決方案。如果您對 FSx for ONTAP檔案系統、基礎架構或任何使用此服務的解決方案有疑問或技術支援問題，請使用 AWS 管理主控台中的支援中心向 AWS 提交支援案例。選擇“FSx for ONTAP”服務和適當的類別。提供建立 AWS 支援案例所需的其餘資訊。
+
+對於特定於NetApp控制台或NetApp儲存解決方案和服務的一般和技術支援問題，您可以使用NetApp組織級序號開啟NetApp支援票證。你需要link:https://docs.netapp.com/us-en/console-fsx-ontap/support/task-support-registration.html["註冊您的NetApp組織"^]啟動支援。

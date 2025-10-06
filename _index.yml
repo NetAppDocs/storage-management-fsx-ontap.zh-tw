@@ -1,0 +1,39 @@
+---
+indexpage:
+  title: Amazon FSx for NetApp ONTAP管理
+  summary: Amazon FSx for NetApp ONTAP將ONTAP的全部功能引入原生 AWS 託管服務，提供一致的混合雲體驗。本文檔說明如何在NetApp控制台中管理
+    FSx for ONTAP 。
+  keywords: amazon, fsx, netapp, ontap, bluexp, create, manage, NetApp Console
+  lead: Amazon FSx for NetApp ONTAP將ONTAP的全部功能引入原生 AWS 託管服務，提供一致的混合雲體驗。本文檔說明如何在NetApp控制台中管理
+    FSx for ONTAP 。
+  tiles:
+  - title: 開始
+    links:
+    - title: 發行說明
+      url: "/whats-new.html"
+    - title: 了解適用Amazon FSx for NetApp ONTAP
+      url: "/start/concept-fsx-aws.html"
+    - title: 快速啟動
+      url: "/start/task-getting-started-fsx.html"
+    - title: 創建或發現系統
+      url: "/use/task-create-fsx-system.html"
+  - title: 使用 FSx for ONTAP
+    links:
+    - title: 建立 FSx for ONTAP檔案系統
+      url: "/use/task-create-fsx-system.html"
+    - title: 管理 FSx for ONTAP檔案系統
+      url: "/use/task-manage-fsx-systems.html"
+  - title: 知識和支持
+    links:
+    - title: 註冊以獲得支持
+      url: "/support/task-support-registration.html"
+    - title: 獲取協助
+      url: "/support/task-get-help.html"
+  - title: 部落格和社區
+    links:
+    - title: NetApp控制台
+      url: https://www.netapp.com/console
+    - title: NetApp資料服務
+      url: https://www.netapp.com/data-services/
+    - title: NetApp社群
+      url: https://community.netapp.com/
