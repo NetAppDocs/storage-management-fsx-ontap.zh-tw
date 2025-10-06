@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: use/task-remove-filesystem.html 
 keywords: amazon fsx for netapp ontap, fsx for ontap, fsx, remove fsx for ontap file system, remove file system, file system, disassociate file system, bluexp, NetApp Console 
-summary: 從NetApp控制台中的專案中刪除 FSx for ONTAP檔案系統。 
+summary: 從NetApp Console中的專案中刪除 FSx for ONTAP檔案系統。 
 ---
 = 從專案中刪除 FSx for ONTAP檔案系統
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: 從NetApp控制台中的專案中刪除 FSx for ONTAP檔案系統。
 
 
 [role="lead"]
-從NetApp控制台中的專案中刪除 FSx for ONTAP檔案系統。此操作將檔案系統與一個項目分離，以便您可以將其與同一帳戶內的另一個項目關聯。
+從NetApp Console中的專案中刪除 FSx for ONTAP檔案系統。此操作將檔案系統與一個項目分離，以便您可以將其與同一帳戶內的另一個項目關聯。
 
 .關於此任務
-從專案中刪除 FSx for ONTAP檔案系統會將其從NetApp控制台中刪除。它不會刪除 FSx for ONTAP檔案系統。您稍後可以在同一個帳戶內相同或不同的項目中重新發現 FSx for ONTAP檔案系統。
+從專案中刪除 FSx for ONTAP檔案系統會將其從NetApp Console中刪除。它不會刪除 FSx for ONTAP檔案系統。您稍後可以在同一個帳戶內相同或不同的項目中重新發現 FSx for ONTAP檔案系統。
 
 .步驟
-. 從NetApp控制台選單中，選擇“*儲存*”，然後選擇“*管理*”。
+. 從NetApp Console選單中，選擇“*儲存*”，然後選擇“*管理*”。
 . 選擇要刪除的檔案系統。
 . 選擇*進入系統*。
 . 從儲存中的 FSx for ONTAP中，選擇三點選單，然後選擇*從項目中刪除*。

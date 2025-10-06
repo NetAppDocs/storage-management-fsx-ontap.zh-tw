@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: requirements/task-setting-up-permissions-fsx.html 
 keywords: fsx for ontap, iam, user role, permissions, credentials, bluexp 
-summary: 若要建立或管理 FSx for ONTAP工作環境，您需要在NetApp控制台中新增 AWS 憑證，方法是提供 IAM 角色的 ARN，該角色授予從NetApp控制台建立 FSx for ONTAP系統所需的權限。 
+summary: 若要建立或管理 FSx for ONTAP工作環境，您需要在NetApp Console中新增 AWS 憑證，方法是提供 IAM 角色的 ARN，該角色授予從NetApp Console建立 FSx for ONTAP系統所需的權限。 
 ---
 = 設定 FSx for ONTAP的權限
 :hardbreaks:
@@ -14,15 +14,15 @@ summary: 若要建立或管理 FSx for ONTAP工作環境，您需要在NetApp控
 
 
 [role="lead"]
-若要建立或管理 FSx for ONTAP工作環境，您需要在NetApp控制台中新增 AWS 憑證，方法是提供 IAM 角色的 ARN，該角色授予從NetApp控制台建立 FSx for ONTAP系統所需的權限。
+若要建立或管理 FSx for ONTAP工作環境，您需要在NetApp Console中新增 AWS 憑證，方法是提供 IAM 角色的 ARN，該角色授予從NetApp Console建立 FSx for ONTAP系統所需的權限。
 
 
 
 == 為什麼需要 AWS 憑證
 
-需要 AWS 憑證才能從NetApp控制台建立和管理 FSx for ONTAP系統。您可以建立新的 AWS 憑證或將 AWS 憑證新增至現有組織。憑證提供從NetApp控制台管理 AWS 雲端環境中的資源和流程所需的權限。
+需要 AWS 憑證才能從NetApp Console建立和管理 FSx for ONTAP系統。您可以建立新的 AWS 憑證或將 AWS 憑證新增至現有組織。憑證提供從NetApp Console管理 AWS 雲端環境中的資源和流程所需的權限。
 
-憑證和權限透過NetApp Workload Factory 進行管理。  Workload Factory 是一個生命週期管理平台，旨在幫助使用者使用Amazon FSx for NetApp ONTAP檔案系統優化工作負載。  NetApp控制台使用與 Workload Factory 相同的一組 AWS 憑證和權限。
+憑證和權限透過NetApp Workload Factory進行管理。  Workload Factory 是一個生命週期管理平台，旨在幫助使用者使用Amazon FSx for NetApp ONTAP檔案系統優化工作負載。  NetApp Console使用與 Workload Factory 相同的一組 AWS 憑證和權限。
 
 Workload Factory 介面為 FSx for ONTAP使用者提供了啟用儲存、VMware、資料庫和 GenAI 等工作負載功能以及選擇工作負載權限的選項。  _Storage_ 是 Workload Factory 中的儲存管理功能，也是您建立和管理 FSx for ONTAP檔案系統所需啟用和新增憑證的唯一功能。
 
@@ -34,7 +34,7 @@ Workload Factory 介面為 FSx for ONTAP使用者提供了啟用儲存、VMware�
 
 可以從「*憑證*」頁面上的「管理」選單中查看新的和現有的 AWS 憑證。
 
-image:screenshot-netapp-console-administration-credentials.png["NetApp控制台管理選單中反白顯示的管理選單和憑證選項的螢幕截圖。"]
+image:screenshot-netapp-console-administration-credentials.png["NetApp Console管理選單中反白顯示的管理選單和憑證選項的螢幕截圖。"]
 
 您可以使用兩種方法新增憑證：
 
@@ -46,22 +46,22 @@ image:screenshot-netapp-console-administration-credentials.png["NetApp控制台�
 
 == 手動向帳戶新增憑證
 
-您可以手動將 AWS 憑證新增至NetApp控制台，以授予您的帳戶管理用於執行獨特工作負載的 AWS 資源所需的權限。您新增的每組憑證都將包含一個或多個基於您要使用的工作負載功能的 IAM 策略，以及指派給您帳戶的 IAM 角色。
+您可以手動將 AWS 憑證新增至NetApp Console，以授予您的帳戶管理用於執行獨特工作負載的 AWS 資源所需的權限。您新增的每組憑證都將包含一個或多個基於您要使用的工作負載功能的 IAM 策略，以及指派給您帳戶的 IAM 角色。
 
 建立憑證分為三個部分：
 
 * 選擇您想要使用的服務和權限級別，然後從 AWS 管理主控台建立 IAM 原則。
 * 從 AWS 管理主控台建立 IAM 角色。
-* 在NetApp控制台中的「工作負載」中，輸入名稱並新增憑證。
+* 從NetApp Console中的「工作負載」中，輸入名稱並新增憑證。
 
 
-若要建立或管理 FSx for ONTAP工作環境，您需要透過提供 IAM 角色的 ARN 將 AWS 憑證新增至NetApp控制台中的工作負載，該角色為工作負載提供建立 FSx for ONTAP工作環境所需的權限。
+若要建立或管理 FSx for ONTAP工作環境，您需要透過提供 IAM 角色的 ARN 將 AWS 憑證新增至NetApp Console中的工作負載，該角色為工作負載提供建立 FSx for ONTAP工作環境所需的權限。
 
 .開始之前
 您需要擁有憑證才能登入您的 AWS 帳戶。
 
 .步驟
-. 從NetApp控制台選單中，選擇 *管理*，然後選擇 *憑證*。
+. 從NetApp Console選單中，選擇 *管理*，然後選擇 *憑證*。
 . 從「組織憑證」頁面中，選擇「新增憑證」。
 . 選擇 *Amazon Web Services*，然後選擇 *FSx for ONTAP*，再選擇 *Next*。
 +
@@ -216,13 +216,13 @@ image:screenshot-netapp-console-administration-credentials.png["NetApp控制台�
 
 
 .結果
-憑證已建立並可在憑證頁面上查看。現在，您可以在建立 FSx for ONTAP工作環境時使用這些憑證。無論何時需要，您都可以重新命名憑證或將其從NetApp控制台中刪除。
+憑證已建立並可在憑證頁面上查看。現在，您可以在建立 FSx for ONTAP工作環境時使用這些憑證。無論何時需要，您都可以重新命名憑證或將其從NetApp Console中刪除。
 
 
 
 == 使用 CloudFormation 為帳戶新增憑證
 
-您可以使用 AWS CloudFormation 堆疊將 AWS 憑證新增至工作負載，方法是選擇要使用的工作負載功能，然後在您的 AWS 帳戶中啟動 AWS CloudFormation 堆疊。CloudFormation 將根據您選擇的工作負載功能建立 IAM 原則和 IAM 角色。
+您可以使用 AWS CloudFormation 堆疊將 AWS 憑證新增至工作負載，方法是選擇要使用的工作負載功能，然後在您的 AWS 帳戶中啟動 AWS CloudFormation 堆疊。  CloudFormation 將根據您選擇的工作負載功能建立 IAM 政策和 IAM 角色。
 
 .開始之前
 * 您需要擁有憑證才能登入您的 AWS 帳戶。
@@ -262,7 +262,7 @@ image:screenshot-netapp-console-administration-credentials.png["NetApp控制台�
 
 
 .步驟
-. 從NetApp控制台選單中，選擇 *管理*，然後選擇 *憑證*。
+. 從NetApp Console選單中，選擇 *管理*，然後選擇 *憑證*。
 . 選擇*新增憑證*。
 . 選擇 *Amazon Web Services*，然後選擇 *FSx for ONTAP*，再選擇 *Next*。
 +
@@ -291,4 +291,4 @@ image:screenshot-netapp-console-administration-credentials.png["NetApp控制台�
 
 
 .結果
-憑證已建立並可在憑證頁面上查看。現在，您可以在建立 FSx for ONTAP工作環境時使用這些憑證。無論何時需要，您都可以重新命名憑證或將其從NetApp控制台中刪除。
+憑證已建立並可在憑證頁面上查看。現在，您可以在建立 FSx for ONTAP工作環境時使用這些憑證。無論何時需要，您都可以重新命名憑證或將其從NetApp Console中刪除。

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: use/task-manage-fsx-systems.html 
 keywords: amazon fsx for netapp ontap, fsx, manage fsx for ontap system, delete fsx for ontap system, remove fsx for ontap system, throughput capacity, change throughput, automatic capacity management, capacity management, storage capacity, replication, classification, sync, backup, recovery, bluexp, NetApp Console 
-summary: 在NetApp控制台中建立或發現 FSx for ONTAP系統後，您可以管理檔案系統並使用提供備份和復原等功能的NetApp資料服務。 
+summary: 在NetApp Console中建立或發現 FSx for ONTAP系統後，您可以管理檔案系統並使用提供備份和復原等功能的NetApp資料服務。 
 ---
-= 在NetApp控制台中管理 FSx for ONTAP檔案系統
+= 在NetApp Console中管理 FSx for ONTAP檔案系統
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: 在NetApp控制台中建立或發現 FSx for ONTAP系統後，您可以
 
 
 [role="lead"]
-在NetApp控制台中建立或發現 FSx for ONTAP系統後，您可以透過建立磁碟區、管理儲存虛擬機器、保護資料和管理檔案系統來管理檔案系統。控制台還可讓您使用提供備份和復原、資料分類、資料同步等功能的資料服務。
+在NetApp Console中建立或發現 FSx for ONTAP系統後，您可以透過建立磁碟區、管理儲存虛擬機器、保護資料和管理檔案系統來管理檔案系統。控制台還可讓您使用提供備份和復原、資料分類、資料同步等功能的資料服務。
 
 
 
 == 使用NetApp Workloads 管理檔案系統
 
-當您從NetApp控制台系統頁面開啟 FSx for ONTAP系統時，您將進入NetApp工作負載。  Workloads 是一種智慧優化和自動化服務，它使用行業最佳實踐來設計、設定和操作使用Amazon FSx for NetApp ONTAP 的關鍵工作負載。
+當您從NetApp Console系統頁面開啟 FSx for ONTAP系統時，您將進入NetApp工作負載。  Workloads 是一種智慧優化和自動化服務，它使用行業最佳實踐來設計、設定和操作使用Amazon FSx for NetApp ONTAP 的關鍵工作負載。
 
 https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["了解如何使用NetApp Workloads 管理檔案系統"^]
 
@@ -48,35 +48,35 @@ link:https://github.com/NetApp/NetApp-CloudFormation-FSx-ONTAP-provider["NetApp 
 
 === 備份和恢復您的數據
 
-NetApp Backup and Recovery 為本地和雲端的NetApp ONTAP資料、資料庫和虛擬機器提供高效率、安全且經濟的資料保護。
+NetApp Backup and Recovery為本地端和雲端的NetApp ONTAP資料、資料庫和虛擬機器提供高效率、安全且經濟的資料保護。
 
-link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["開始使用NetApp備份與還原"^]
+link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["開始使用NetApp Backup and Recovery"^]
 
 
 
 === 傳輸和同步數據
 
-NetApp Copy and Sync 是一種雲端複製和同步服務，用於在本機和雲端物件儲存之間傳輸 NAS 資料。
+NetApp Copy and Sync是一種雲端複製和同步服務，用於在本機和雲端物件儲存之間傳輸 NAS 資料。
 
-link:https://docs.netapp.com/us-en/data-services-copy-sync/task-quick-start.html["開始使用NetApp複製和同步"^]
+link:https://docs.netapp.com/us-en/data-services-copy-sync/task-quick-start.html["開始使用NetApp Copy and Sync"^]
 
 
 
 === 掃描並分類您的數據
 
-NetApp資料分類可讓您掃描和分類組織混合多雲中的資料。
+NetApp Data Classification可讓您掃描和分類組織混合多雲中的資料。
 
-link:https://docs.netapp.com/us-en/data-services-data-classification/index.html["開始使用NetApp資料分類"^]
+link:https://docs.netapp.com/us-en/data-services-data-classification/index.html["開始使用NetApp Data Classification"^]
 
 
 
 === 複製數據
 
-複製資料以支援備份和災難復原。可以使用NetApp Replication 完成 FSx for ONTAP檔案系統與Cloud Volumes ONTAP之間，或 FSx for ONTAP檔案系統與本機ONTAP系統之間的資料複製。透過複製，您可以在ONTAP儲存系統之間複製數據，以支援到雲端或雲端之間的備份和災難復原。
+複製資料以支援備份和災難復原。可以使用NetApp Replication完成 FSx for ONTAP檔案系統與Cloud Volumes ONTAP之間，或 FSx for ONTAP檔案系統與本機ONTAP系統之間的資料複製。透過複製，您可以在ONTAP儲存系統之間複製數據，以支援到雲端或雲端之間的備份和災難復原。
 
 link:https://docs.netapp.com/us-en/data-services-replication/task-replicating-data.html["開始使用NetApp Replication"^]
 
-可以透過NetApp控制台系統頁面在兩個 FSx for ONTAP檔案系統之間進行資料複製。
+可以透過NetApp Console系統頁面在兩個 FSx for ONTAP檔案系統之間進行資料複製。
 
 .開始之前
 在開始之前請考慮以下事項。
@@ -86,7 +86,7 @@ link:https://docs.netapp.com/us-en/data-services-replication/task-replicating-da
 
 
 .步驟
-. 從NetApp控制台系統頁面中，將來源 FSx for ONTAP檔案系統拖曳到目標 FSx for ONTAP檔案系統的頂部，然後選擇 *複製*。
+. 從NetApp Console系統頁面中，將來源 FSx for ONTAP檔案系統拖曳到目標 FSx for ONTAP檔案系統的頂部，然後選擇 *複製*。
 . 在「建立複製」頁面上，選擇要複製的來源卷，然後按一下「下一步」。
 . 在複製目標下，提供以下內容：
 +
@@ -166,6 +166,6 @@ NOTE: 長期保留需要匹配的來源標籤和目標標籤。如果需要，�
 
 === 加快存取速度或卸載流量
 
-NetApp磁碟區快取在遠端位置提供持久、可寫入的磁碟區。您可以使用磁碟區快取來加快資料存取速度或卸載存取頻繁的磁碟區的流量。
+NetApp Volume Caching在遠端位置提供持久、可寫入的磁碟區。您可以使用磁碟區快取來加快資料存取速度或卸載存取頻繁的磁碟區的流量。
 
-link:https://docs.netapp.com/us-en/console-volume-caching/get-started/cache-intro.html["開始使用NetApp卷緩存"^]
+link:https://docs.netapp.com/us-en/console-volume-caching/get-started/cache-intro.html["開始使用NetApp Volume Caching"^]

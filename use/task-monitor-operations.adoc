@@ -2,19 +2,19 @@
 sidebar: sidebar 
 permalink: use/task-monitor-operations.html 
 keywords: monitor jobs, track jobs, monitor, track, NetApp Console, bluexp 
-summary: 追蹤 FSx for ONTAP操作並使用NetApp控制台中的 Tracker 監控操作進度。 
+summary: 追蹤 FSx for ONTAP操作並使用NetApp Console中的 Tracker 監控操作進度。 
 ---
-= 使用NetApp控制台中的 Tracker 監控 FSx for ONTAP操作
+= 使用NetApp Console中的 Tracker 監控 FSx for ONTAP操作
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-監控和追蹤 FSx for ONTAP操作的執行情況，並使用NetApp Console 中的 Tracker 監控作業進度。
+監控和追蹤 FSx for ONTAP操作的執行情況，並使用NetApp Console中的 Tracker 監控作業進度。
 
 .關於此任務
-NetApp Console 提供了 Tracker（一項作業監控功能），因此您可以監控和追蹤憑證、FSx for ONTAP和連結操作的進度和狀態，查看操作任務和子任務的詳細信息，並診斷任何問題或故障。
+NetApp Console提供了 Tracker（一項作業監控功能），因此您可以監控和追蹤憑證、FSx for ONTAP和連結操作的進度和狀態，查看操作任務和子任務的詳細信息，並診斷任何問題或故障。
 
 Tracker 中提供了多種操作。您可以按時間範圍（過去 24 小時、7 天、14 天或 30 天）、工作量、狀態和使用者篩選作業；使用搜尋功能尋找作業；並將作業表下載為 CSV 檔案。您可以隨時刷新追蹤器。您可以快速重試失敗的操作或編輯失敗操作的參數並再次嘗試該操作。
 
@@ -37,10 +37,10 @@ Tracker 根據操作支援兩種等級的監控。每個任務（例如檔案系
 
 == 追蹤和監控操作
 
-使用 Tracker 追蹤和監控NetApp控制台中的操作。
+使用 Tracker 追蹤和監控NetApp Console中的操作。
 
 .步驟
-. 從NetApp控制台選單中，選擇 *Workloads*，然後選擇 *Administration*。
+. 從NetApp Console選單中，選擇 *Workloads*，然後選擇 *Administration*。
 . 從管理選單中，選擇*追蹤器*。
 . 在追蹤器中，查看任務或使用篩選器或搜尋來縮小結果範圍。您也可以透過選擇*匯出 CSV*來下載所有操作的報告。
 
