@@ -8,4 +8,4 @@
 
 NetApp現在提供 CloudFormation 資源，讓客戶可以利用 AWS 控制台中未公開的高階ONTAP元件。 CloudFormation 是 AWS 的基礎架構即程式碼機制。您將能夠建立複製關係、CIFS 共用、NFS 匯出策略、快照等。
 
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html["使用 CloudFormation 管理Amazon FSx for NetApp ONTAP檔案系統"]
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-manage-fsx-systems.html["使用 CloudFormation 管理Amazon FSx for NetApp ONTAP檔案系統"]

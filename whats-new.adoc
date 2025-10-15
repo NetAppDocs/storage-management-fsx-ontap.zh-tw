@@ -26,7 +26,7 @@ summary: 了解Amazon FSx for NetApp ONTAP中的新功能。
 
 NetApp Console建立在增強和重組的BlueXP基礎之上，可在企業級內部和雲端環境中集中管理NetApp儲存和NetApp Data Services，提供即時洞察、更快的工作流程和簡化的管理，並且高度安全且合規。
 
-有關更改的詳細信息，請參閱link:https://docs.netapp.com/us-en/bluexp-relnotes/index.html["NetApp Console發行說明。"^]
+有關更改的詳細信息，請參閱link:https://docs.netapp.com/us-en/console-relnotes/index.html["NetApp Console發行說明。"^]
 
 
 
@@ -55,7 +55,7 @@ NetApp Console建立在增強和重組的BlueXP基礎之上，可在企業級內
 
 現在可以從BlueXP控制台中的畫佈在兩個 FSx for ONTAP檔案系統之間進行資料複製。
 
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#replicate-data["複製數據"]
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-manage-fsx-systems.html#replicate-data["複製數據"]
 
 
 
@@ -67,7 +67,7 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-envi
 
 為 FSx for ONTAP檔案系統設定憑證和權限後，您將被重新導向至BlueXP憑證頁面。在此頁面中，您可以重新命名或刪除您的 FSx for ONTAP憑證。
 
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["設定 FSx for ONTAP檔案系統的權限"]
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["設定 FSx for ONTAP檔案系統的權限"]
 
 
 
@@ -85,7 +85,7 @@ Tracker 現在提供 API 回應，以便您可以看到與任務相關的 REST A
 
 現在您可以選擇使用 AWS Secrets Manager 中的機密來驗證鏈接，這樣您就不必使用儲存在BlueXP Workloads 中的憑證。
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["使用 Lambda 連結連線到 FSx for ONTAP檔案系統"]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["使用 Lambda 連結連線到 FSx for ONTAP檔案系統"^]
 
 
 
@@ -93,8 +93,8 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["使用 L
 
 BlueXP Workloads 提供了一個儀表板，您可以在其中查看檔案系統配置的良好架構狀態。您可以利用此分析來為 FSx for ONTAP檔案系統實施最佳實務。檔案系統配置分析包括以下配置：SSD 容量閾值、計劃的本機快照、計劃的 FSx for ONTAP備份、資料分層和遠端資料複製。
 
-* link:https://docs.netapp.com/us-en/workload-fsx-ontap/configuration-analysis.html["了解檔案系統配置的良好架構分析"]
-* link:https://review.docs.netapp.com/us-en/workload-fsx-ontap_well-architected/improve-configurations.html["為您的檔案系統實施最佳實踐"]
+* link:https://docs.netapp.com/us-en/workload-fsx-ontap/configuration-analysis.html["了解檔案系統配置的良好架構分析"^]
+* link:https://review.docs.netapp.com/us-en/workload-fsx-ontap_well-architected/improve-configurations.html["為您的檔案系統實施最佳實踐"^]
 
 
 
@@ -131,7 +131,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.ht
 
 每當您使用 CloudShell 從BlueXP Workloads 執行 FSx for ONTAP操作時，事件都會出現在 Tracker 中。
 
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-monitor-operations.html["了解如何在BlueXP中監控和追蹤 FSx for ONTAP操作"^]
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-monitor-operations.html["了解如何在BlueXP中監控和追蹤 FSx for ONTAP操作"]
 
 
 
@@ -143,7 +143,7 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-monitor-operations.
 
 在 2024 年 11 月與BlueXP整合後，新建立的 FSx for ONTAP檔案系統與BlueXP中的一個工作區沒有關聯。現在，當您建立或發現 FSx for ONTAP檔案系統時，它們會與BlueXP帳戶中的一個工作區相關聯。
 
-如果您現有的 FSx for ONTAP檔案系統未與工作區關聯，我們將協助您將它們與BlueXP中的工作區關聯。你可以link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#create-a-case-with-netapp-support["向NetApp支援建立案例"^]從BlueXP控制台內部。選擇*Workload Factory*作為服務。
+如果您現有的 FSx for ONTAP檔案系統未與工作區關聯，我們將協助您將它們與BlueXP中的工作區關聯。你可以link:https://docs.netapp.com/us-en/console-setup-admin/task-get-help.html#create-a-case-with-netapp-support["向NetApp支援建立案例"^]從BlueXP控制台內部。選擇*Workload Factory*作為服務。
 
 
 
@@ -151,7 +151,7 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-monitor-operations.
 
 現在您可以從BlueXP畫布中的工作區中刪除 FSx for ONTAP檔案系統。此操作將檔案系統與一個工作區分離，以便您可以將其與同一BlueXP帳戶內的另一個工作區關聯。
 
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-remove-filesystem.html["了解如何從BlueXP中的工作區中刪除 FSx for ONTAP檔案系統"^]
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-remove-filesystem.html["了解如何從BlueXP中的工作區中刪除 FSx for ONTAP檔案系統"]
 
 
 
@@ -159,7 +159,7 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-remove-filesystem.h
 
 Tracker 是一種新的監控功能，可在BlueXP Amazon FSx for NetApp ONTAP中使用。您可以使用 Tracker 監控和追蹤憑證、儲存和連結操作的進度和狀態，查看操作任務和子任務的詳細信息，診斷任何問題或故障，編輯失敗操作的參數，以及重試失敗的操作。
 
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-monitor-operations.html["了解如何在BlueXP中監控和追蹤 FSx for ONTAP操作"^]
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-monitor-operations.html["了解如何在BlueXP中監控和追蹤 FSx for ONTAP操作"]
 
 
 
@@ -179,7 +179,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/use-cloudshell.html["使
 
 NetApp現在提供 CloudFormation 資源，讓客戶可以利用 AWS 控制台中未公開的高階ONTAP元件。 CloudFormation 是 AWS 的基礎架構即程式碼機制。您將能夠建立複製關係、CIFS 共用、NFS 匯出策略、快照等。
 
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html["使用 CloudFormation 管理Amazon FSx for NetApp ONTAP檔案系統"]
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-manage-fsx-systems.html["使用 CloudFormation 管理Amazon FSx for NetApp ONTAP檔案系統"]
 
 
 
@@ -233,23 +233,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-fsx-ontap/main/media/s
 
 === 維護視窗開始時間
 
-什麼時候link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["創造工作環境"]，您可以指定每週 30 分鐘維護窗口的開始時間，以確保維護不會與關鍵業務活動衝突。
-
-
-
-=== 使用 FlexGroups 分送卷數據
-
-建立磁碟區時，您可以透過建立FlexGroup在磁碟區之間分發資料來實現資料最佳化。
-
-
-
-== 2023年6月4日
-
-
-
-=== 維護視窗開始時間
-
-什麼時候link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["創造工作環境"]，您可以指定每週 30 分鐘維護窗口的開始時間，以確保維護不會與關鍵業務活動衝突。
+什麼時候link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-create-fsx-system.html["創造工作環境"]，您可以指定每週 30 分鐘維護窗口的開始時間，以確保維護不會與關鍵業務活動衝突。
 
 
 
@@ -265,7 +249,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-fsx-ontap/main/media/s
 
 === 產生安全群組
 
-在建立工作環境時，您現在可以使用BlueXPlink:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["產生安全群組"]僅允許所選 VPC 內的流量。此功能link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["需要額外的權限"]。
+在建立工作環境時，您現在可以使用BlueXPlink:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-create-fsx-system.html["產生安全群組"]僅允許所選 VPC 內的流量。此功能link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["需要額外的權限"]。
 
 
 
@@ -301,7 +285,7 @@ IOPS 限制增加，以允許手動或自動配置高達 160,000。
 
 === 自動容量管理
 
-現在您可以選擇啟用link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#manage-automatic-capacity["自動容量管理"]根據需求新增增量儲存。自動容量管理定期輪詢叢集以評估需求，並自動以 10% 的增量增加儲存容量，直到達到叢集最大容量的 80%。
+現在您可以選擇啟用link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-manage-fsx-systems.html["自動容量管理"]根據需求新增增量儲存。自動容量管理定期輪詢叢集以評估需求，並自動以 10% 的增量增加儲存容量，直到達到叢集最大容量的 80%。
 
 
 
@@ -311,7 +295,7 @@ IOPS 限制增加，以允許手動或自動配置高達 160,000。
 
 === 變更儲存容量和 IOPS
 
-您現在可以link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#change-storage-capacity-and-IOPS["變更儲存容量和 IOPS"]在建立 FSx for ONTAP工作環境後隨時。
+您現在可以link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-manage-fsx-systems.html["變更儲存容量和 IOPS"]在建立 FSx for ONTAP工作環境後隨時。
 
 
 
@@ -323,13 +307,13 @@ IOPS 限制增加，以允許手動或自動配置高達 160,000。
 
 如果您之前向 Cloud Manager 提供了您的 AWS 憑證，則新的 *My estate* 功能可以自動發現並建議使用 Cloud Manager 新增和管理 FSx for ONTAP檔案系統。您也可以透過「我的財產」標籤查看可用的資料服務。
 
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["使用「我的資產」探索 FSx for ONTAP"]
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-create-fsx-system.html#discover-an-existing-fsx-for-ontap-file-system["使用「我的資產」探索 FSx for ONTAP"]
 
 
 
 === 更改吞吐能力
 
-您現在可以link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#change-throughput-capacity["改變吞吐能力"]在建立 FSx for ONTAP工作環境後隨時。
+您現在可以link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-manage-fsx-systems.html["改變吞吐能力"]在建立 FSx for ONTAP工作環境後隨時。
 
 
 
@@ -353,7 +337,7 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-workin
 
 現在您可以選擇單一或多個可用區 HA 部署模型。
 
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-ontap-working-environment["建立 FSx for ONTAP工作環境"]
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-create-fsx-system.html["建立 FSx for ONTAP工作環境"]
 
 
 
@@ -361,7 +345,7 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-workin
 
 Cloud Manager 現在支援 AWS GovCloud 帳戶身份驗證。
 
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html#set-up-the-iam-role["設定 IAM 角色"]
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/requirements/task-setting-up-permissions-fsx.html#set-up-the-iam-role["設定 IAM 角色"]
 
 
 
@@ -373,7 +357,7 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up
 
 當您建立 FSx for ONTAP工作環境時，您現在必須提供 Cloud Manager 可以承擔的 IAM 角色的 ARN 來建立 FSx for ONTAP工作環境。您之前需要提供 AWS 存取金鑰。
 
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["了解如何設定 FSx for ONTAP 的權限"] 。
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["了解如何設定 FSx for ONTAP 的權限"]。
 
 
 
@@ -417,14 +401,14 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up
 
 * link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["Amazon FSx for NetApp ONTAP"^]是一項完全託管的服務，允許客戶啟動和運行由 NetApp 的ONTAP儲存作業系統提供支援的檔案系統。  FSx for ONTAP提供NetApp客戶在本機上使用的相同功能、效能和管理功能，同時具有原生 AWS 服務的簡單性、靈活性、安全性和可擴充性。
 +
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html["了解適用Amazon FSx for NetApp ONTAP"] 。
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fsx-aws.html["了解適用Amazon FSx for NetApp ONTAP"]。
 
 * 您可以在 Cloud Manager 中設定 FSx for ONTAP工作環境。
 +
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html["建立Amazon FSx for NetApp ONTAP工作環境"] 。
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-create-fsx-system.html["建立Amazon FSx for NetApp ONTAP工作環境"]。
 
 * 使用 AWS 和 Cloud Manager 中的連接器，您可以建立和管理磁碟區、複製資料以及將 FSx for ONTAP與NetApp雲端服務（例如 Data Sense 和Cloud Sync）整合。
 +
-link:https://docs.netapp.com/us-en/bluexp-classification/task-scanning-fsx.html["開始使用適用於Amazon FSx for NetApp ONTAP 的Cloud Data Sense"^] 。
+link:https://docs.netapp.com/us-en/data-services-data-classification/task-scanning-fsx.html["開始使用適用於Amazon FSx for NetApp ONTAP 的Cloud Data Sense"^]。
 
 

@@ -8,4 +8,4 @@
 
 每當您使用 CloudShell 從BlueXP Workloads 執行 FSx for ONTAP操作時，事件都會出現在 Tracker 中。
 
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-monitor-operations.html["了解如何在BlueXP中監控和追蹤 FSx for ONTAP操作"^]
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-monitor-operations.html["了解如何在BlueXP中監控和追蹤 FSx for ONTAP操作"]

@@ -14,7 +14,7 @@ Tracker 現在提供 API 回應，以便您可以看到與任務相關的 REST A
 
 現在您可以選擇使用 AWS Secrets Manager 中的機密來驗證鏈接，這樣您就不必使用儲存在BlueXP Workloads 中的憑證。
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["使用 Lambda 連結連線到 FSx for ONTAP檔案系統"]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["使用 Lambda 連結連線到 FSx for ONTAP檔案系統"^]
 
 
 
@@ -22,8 +22,8 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["使用 L
 
 BlueXP Workloads 提供了一個儀表板，您可以在其中查看檔案系統配置的良好架構狀態。您可以利用此分析來為 FSx for ONTAP檔案系統實施最佳實務。檔案系統配置分析包括以下配置：SSD 容量閾值、計劃的本機快照、計劃的 FSx for ONTAP備份、資料分層和遠端資料複製。
 
-* link:https://docs.netapp.com/us-en/workload-fsx-ontap/configuration-analysis.html["了解檔案系統配置的良好架構分析"]
-* link:https://review.docs.netapp.com/us-en/workload-fsx-ontap_well-architected/improve-configurations.html["為您的檔案系統實施最佳實踐"]
+* link:https://docs.netapp.com/us-en/workload-fsx-ontap/configuration-analysis.html["了解檔案系統配置的良好架構分析"^]
+* link:https://review.docs.netapp.com/us-en/workload-fsx-ontap_well-architected/improve-configurations.html["為您的檔案系統實施最佳實踐"^]
 
 
 

@@ -8,7 +8,7 @@
 
 在 2024 年 11 月與BlueXP整合後，新建立的 FSx for ONTAP檔案系統與BlueXP中的一個工作區沒有關聯。現在，當您建立或發現 FSx for ONTAP檔案系統時，它們會與BlueXP帳戶中的一個工作區相關聯。
 
-如果您現有的 FSx for ONTAP檔案系統未與工作區關聯，我們將協助您將它們與BlueXP中的工作區關聯。你可以link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#create-a-case-with-netapp-support["向NetApp支援建立案例"^]從BlueXP控制台內部。選擇*Workload Factory*作為服務。
+如果您現有的 FSx for ONTAP檔案系統未與工作區關聯，我們將協助您將它們與BlueXP中的工作區關聯。你可以link:https://docs.netapp.com/us-en/console-setup-admin/task-get-help.html#create-a-case-with-netapp-support["向NetApp支援建立案例"^]從BlueXP控制台內部。選擇*Workload Factory*作為服務。
 
 
 
@@ -16,7 +16,7 @@
 
 現在您可以從BlueXP畫布中的工作區中刪除 FSx for ONTAP檔案系統。此操作將檔案系統與一個工作區分離，以便您可以將其與同一BlueXP帳戶內的另一個工作區關聯。
 
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-remove-filesystem.html["了解如何從BlueXP中的工作區中刪除 FSx for ONTAP檔案系統"^]
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-remove-filesystem.html["了解如何從BlueXP中的工作區中刪除 FSx for ONTAP檔案系統"]
 
 
 
@@ -24,7 +24,7 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-remove-filesystem.h
 
 Tracker 是一種新的監控功能，可在BlueXP Amazon FSx for NetApp ONTAP中使用。您可以使用 Tracker 監控和追蹤憑證、儲存和連結操作的進度和狀態，查看操作任務和子任務的詳細信息，診斷任何問題或故障，編輯失敗操作的參數，以及重試失敗的操作。
 
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-monitor-operations.html["了解如何在BlueXP中監控和追蹤 FSx for ONTAP操作"^]
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-monitor-operations.html["了解如何在BlueXP中監控和追蹤 FSx for ONTAP操作"]
 
 
 

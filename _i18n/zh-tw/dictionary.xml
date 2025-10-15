@@ -2,7 +2,6 @@
 <blocks>
   <block id="c0fde7a894f20194ba5123471f8cf7e7" category="doc">維護視窗開始時間</block>
   <block id="b11363dc7ad08609dacf71adabc1e3d7" category="inline-link-macro">創造工作環境</block>
-  <block id="10e8c8304b9e2addfde9674eecebe26d" category="paragraph">什麼時候<block ref="4dc3136355725d3b99f2f810e0caebe8" category="inline-link-macro-rx"></block>，您可以指定每週 30 分鐘維護窗口的開始時間，以確保維護不會與關鍵業務活動衝突。</block>
   <block id="12ad4af5f024e558448bad702ec7ef28" category="section-title">使用 FlexGroups 分送卷數據</block>
   <block id="a99698e6bfb32d69ea7622acfe7f39c4" category="paragraph">建立磁碟區時，您可以透過建立FlexGroup在磁碟區之間分發資料來實現資料最佳化。</block>
   <block id="4343b2bdc884cb638429641e12c0514c" category="doc">新增儲存虛擬機</block>
@@ -23,19 +22,15 @@
   <block id="16e305f77c7a0272aceac8c95312d98a" category="doc">NetApp發布更多 Clo​​Formation 資源</block>
   <block id="c043b3439543ebfc027a3c1fcb5613a5" category="paragraph">NetApp現在提供 CloudFormation 資源，讓客戶可以利用 AWS 控制台中未公開的高階ONTAP元件。 CloudFormation 是 AWS 的基礎架構即程式碼機制。您將能夠建立複製關係、CIFS 共用、NFS 匯出策略、快照等。</block>
   <block id="01d4e72c68c36e8905e55eeb7f8aff0c" category="inline-link-macro">使用 CloudFormation 管理Amazon FSx for NetApp ONTAP檔案系統</block>
-  <block id="f883109f2802c104ac9ae2e21a56b762" category="paragraph"><block ref="f883109f2802c104ac9ae2e21a56b762" category="inline-link-macro-rx"></block></block>
   <block id="8f0b3ce2b96f337852fd1c252724a612" category="doc">將 FSx for ONTAP檔案系統與BlueXP中的工作區關聯</block>
   <block id="da3003c64aba681511ac42ea840639fa" category="paragraph">在 2024 年 11 月與BlueXP整合後，新建立的 FSx for ONTAP檔案系統與BlueXP中的一個工作區沒有關聯。現在，當您建立或發現 FSx for ONTAP檔案系統時，它們會與BlueXP帳戶中的一個工作區相關聯。</block>
   <block id="4716735cca1c0ec4ab6acb97d14dcaa7" category="inline-link-macro">向NetApp支援建立案例</block>
-  <block id="f0100d47b49cbe11e6a325bdee8db6ff" category="paragraph">如果您現有的 FSx for ONTAP檔案系統未與工作區關聯，我們將協助您將它們與BlueXP中的工作區關聯。你可以<block ref="d0e0ce62131d959daa6f062d97c0d6a8" category="inline-link-macro-rx"></block>從BlueXP控制台內部。選擇*Workload Factory*作為服務。</block>
   <block id="ca67d4d470c8d498e9ac0294cf4f7805" category="section-title">從BlueXP畫布中刪除檔案系統</block>
   <block id="b93cfe5d8c5b8d31c6e277f9086d4e40" category="paragraph">現在您可以從BlueXP畫布中的工作區中刪除 FSx for ONTAP檔案系統。此操作將檔案系統與一個工作區分離，以便您可以將其與同一BlueXP帳戶內的另一個工作區關聯。</block>
   <block id="181840612e9e637bf9dbbc740a738a45" category="inline-link-macro">了解如何從BlueXP中的工作區中刪除 FSx for ONTAP檔案系統</block>
-  <block id="e3d09410dae9543aebfcc83b7bceebc5" category="paragraph"><block ref="e3d09410dae9543aebfcc83b7bceebc5" category="inline-link-macro-rx"></block></block>
   <block id="ea3d4df6f8aff21b2dfe549c5ecf9775" category="section-title">追蹤器可用於監控和追蹤操作</block>
   <block id="ce9be95deabee3be9356a5b5de8e7b0b" category="paragraph">Tracker 是一種新的監控功能，可在BlueXP Amazon FSx for NetApp ONTAP中使用。您可以使用 Tracker 監控和追蹤憑證、儲存和連結操作的進度和狀態，查看操作任務和子任務的詳細信息，診斷任何問題或故障，編輯失敗操作的參數，以及重試失敗的操作。</block>
   <block id="0672b60d374d87a810fa73810e4a0a82" category="inline-link-macro">了解如何在BlueXP中監控和追蹤 FSx for ONTAP操作</block>
-  <block id="d3626ed21f71a99d578970f5e4960cdc" category="paragraph"><block ref="d3626ed21f71a99d578970f5e4960cdc" category="inline-link-macro-rx"></block></block>
   <block id="27a901c04d21dffe48f2fc38150f7c5c" category="section-title">BlueXP工作負載中可用的 CloudShell</block>
   <block id="30e5906a069abe8bb88f1aed916b358b" category="paragraph">當您位於BlueXP控制台內的BlueXP工作負載中時，CloudShell 可用。  CloudShell 可讓您使用您在BlueXP帳戶中提供的 AWS 和ONTAP憑證，並在類似 shell 的環境中執行 AWS CLI 命令或ONTAP CLI 命令。</block>
   <block id="4ab00ae468588a563b956d814954695d" category="inline-link-macro">使用 CloudShell</block>
@@ -51,13 +46,10 @@
   <block id="7dc7c15512069d38e071e0b7f2eb0075" category="section-title">AWS Secrets Manager 的連結身份驗證支持</block>
   <block id="73ecd40a86b02acff9f56b3a1ac74d7f" category="paragraph">現在您可以選擇使用 AWS Secrets Manager 中的機密來驗證鏈接，這樣您就不必使用儲存在BlueXP Workloads 中的憑證。</block>
   <block id="37b002845528ac0296b86d28bb71e5a5" category="inline-link-macro">使用 Lambda 連結連線到 FSx for ONTAP檔案系統</block>
-  <block id="bdd7f454c54673987f53c40f8e5b8072" category="paragraph"><block ref="bdd7f454c54673987f53c40f8e5b8072" category="inline-link-macro-rx"></block></block>
   <block id="b4650b4ce326d6a3b7fad5e98b1b29d3" category="section-title">實作 FSx for ONTAP檔案系統的最佳實踐</block>
   <block id="bf66fc8532837c2f341b98d92d40bd27" category="paragraph">BlueXP Workloads 提供了一個儀表板，您可以在其中查看檔案系統配置的良好架構狀態。您可以利用此分析來為 FSx for ONTAP檔案系統實施最佳實務。檔案系統配置分析包括以下配置：SSD 容量閾值、計劃的本機快照、計劃的 FSx for ONTAP備份、資料分層和遠端資料複製。</block>
   <block id="20c1cdeb819f1a107044754c5b7cd16d" category="inline-link-macro">了解檔案系統配置的良好架構分析</block>
-  <block id="f85ae2c7c8690dad4aad4469edd0d4d1" category="list-text"><block ref="f85ae2c7c8690dad4aad4469edd0d4d1" category="inline-link-macro-rx"></block></block>
   <block id="ee8bd13e9852f521384a9366f9fddac8" category="inline-link-macro">為您的檔案系統實施最佳實踐</block>
-  <block id="a04ab86f504e47221c279d8c74e9697c" category="list-text"><block ref="a04ab86f504e47221c279d8c74e9697c" category="inline-link-macro-rx"></block></block>
   <block id="dad34f5734adb85d9981374c4c32d1d5" category="section-title">針對檔案系統問題的精心設計的通知</block>
   <block id="16ca2e92ee84ccef4088c5d2a61cd8d2" category="paragraph">在BlueXP控制台中，具有良好架構問題的 FSx for ONTAP檔案系統現在會在 Canvas 中顯示通知，指示檔案系統何時出現需要修復的問題。</block>
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">更新了權限術語</block>
@@ -65,11 +57,9 @@
   <block id="737f8adcd33c506f811980c79df8aa51" category="doc">憑證更新</block>
   <block id="e7bb6404e9b51c8163ba1ed57cf3a336" category="paragraph">為 FSx for ONTAP檔案系統設定憑證和權限後，您將被重新導向至BlueXP憑證頁面。在此頁面中，您可以重新命名或刪除您的 FSx for ONTAP憑證。</block>
   <block id="66985acac7963e5883cef62664b25696" category="inline-link-macro">設定 FSx for ONTAP檔案系統的權限</block>
-  <block id="2c546aeb894a7ee538c66b6d3f2cdba7" category="paragraph"><block ref="2c546aeb894a7ee538c66b6d3f2cdba7" category="inline-link-macro-rx"></block></block>
   <block id="374920fe25826b7adee398c37f9fc3ed" category="doc">支援在兩個 FSx for ONTAP檔案系統之間複製數據</block>
   <block id="26beedda3c932bb48fc93a722d410ff6" category="paragraph">現在可以從BlueXP控制台中的畫佈在兩個 FSx for ONTAP檔案系統之間進行資料複製。</block>
   <block id="37fa21b7ca602fd8fe055b26a1de7d8b" category="inline-link-macro">複製數據</block>
-  <block id="12bcd6a565798d844427c95531c1c0ec" category="paragraph"><block ref="12bcd6a565798d844427c95531c1c0ec" category="inline-link-macro-rx"></block></block>
   <block id="6a6ae8005c209a1567f9003ea9e5cebe" category="doc">複製關係標籤的增強功能</block>
   <block id="c6a6fda1561189188099a8444886e4b7" category="paragraph">我們在複製關係表中新增了幾個新列，以便在「複製關係」標籤中為您提供有關複製關係的更多資訊。該表現在包含以下列：</block>
   <block id="932acf34d9bec3ecdd131ec5df85300a" category="list-text">SnapMirror策略</block>
@@ -79,8 +69,6 @@
   <block id="f1b110a50dd5467d821019e318f363a2" category="list-text">上次轉乘時間</block>
   <block id="bc2fe31b1e2682a9a79513d792e9c721" category="doc">BlueXP現在是NetApp Console</block>
   <block id="995c8f79a8e07fbd8d519e45d03d6004" category="paragraph">NetApp Console建立在增強和重組的BlueXP基礎之上，可在企業級內部和雲端環境中集中管理NetApp儲存和NetApp Data Services，提供即時洞察、更快的工作流程和簡化的管理，並且高度安全且合規。</block>
-  <block id="387c71fcb2fb7fdf9038db9d12137530" category="inline-link-macro">NetApp Console發行說明。</block>
-  <block id="50299f698a54426aba27448f16803e14" category="paragraph">有關更改的詳細信息，請參閱<block ref="e3255f3ec57d44ee455071e58df2778b" category="inline-link-macro-rx"></block></block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="summary"></block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律聲明提供對版權聲明、商標、專利等的存取。</block>
@@ -240,7 +228,6 @@
   <block id="20c404f3ca0633629eee9b1b4ccd6737" category="section-title">獲取協助</block>
   <block id="d6d578d7902b08905b3aaecc2b6d1d8a" category="paragraph">Amazon FSx for NetApp ONTAP是 AWS 第一方解決方案。如果您對 FSx for ONTAP檔案系統、基礎架構或任何使用此服務的解決方案有疑問或技術支援問題，請使用 AWS 管理主控台中的支援中心向 AWS 提交支援案例。選擇“FSx for ONTAP”服務和適當的類別。提供建立 AWS 支援案例所需的其餘資訊。</block>
   <block id="1898f6ceaee4c58486a2e833ce881897" category="inline-link-macro">註冊您的NetApp組織</block>
-  <block id="11977f4cb1ac986314a757edd9837c1a" category="paragraph">對於特定於NetApp Console或NetApp儲存解決方案和服務的一般和技術支援問題，您可以使用NetApp組織級序號開啟NetApp支援票證。你需要<block ref="6de27f961c398f0b1c1b489b772c6802" category="inline-link-macro-rx"></block>啟動支援。</block>
   <block id="325b7863c6aff04ff4649985d7829036" category="summary">透過新增憑證、建立控制台代理程式或連結以及建立或發現檔案系統，在NetApp Console中開始使用Amazon FSx for NetApp ONTAP。</block>
   <block id="c2ca61cdaafcad548af5836df039fcb3" category="doc">Amazon FSx for NetApp ONTAP快速入門</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
@@ -636,7 +623,6 @@
   <block id="e2be93aaa649a645aba11243985c766e" category="section-title">產生安全群組</block>
   <block id="b3aad9775f9ce61fe67c9745594b96f0" category="inline-link-macro">產生安全群組</block>
   <block id="beee5e54063eb4d710db752896c928c8" category="inline-link-macro">需要額外的權限</block>
-  <block id="aad99a875ad0c9448b68c1367f655aa5" category="paragraph">在建立工作環境時，您現在可以使用BlueXP<block ref="2dcc7fe33dfc1ec3c2553fdd253353e0" category="inline-link-macro-rx"></block>僅允許所選 VPC 內的流量。此功能<block ref="4e98d12e63c5c0720c845cda898d916d" category="inline-link-macro-rx"></block>。</block>
   <block id="5fd8323487c8b69df76423b19fd7e929" category="section-title">新增或修改標籤</block>
   <block id="6e394b89a07b8bcbbaad16e010588f40" category="paragraph">您可以選擇新增和修改標籤來對磁碟區進行分類。</block>
   <block id="88c49608e723add593f5becc8bd9a968" category="section-title">2023年4月2日</block>
@@ -648,19 +634,15 @@
   <block id="5a0c953dba56aa463b4468d70bfc3feb" category="section-title">2023年1月1日</block>
   <block id="f2be69b635c39988351f6636a52c66bd" category="section-title">自動容量管理</block>
   <block id="f99ecd5cff9b18879fcd5ee404af256f" category="inline-link-macro">自動容量管理</block>
-  <block id="77b6a90689811f67cc803249dffcf057" category="paragraph">現在您可以選擇啟用<block ref="1ad077b1d76451dcea34a865ef72a4a2" category="inline-link-macro-rx"></block>根據需求新增增量儲存。自動容量管理定期輪詢叢集以評估需求，並自動以 10% 的增量增加儲存容量，直到達到叢集最大容量的 80%。</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
   <block id="a0ebe9e341b2c5054b22afc7d98d1401" category="section-title">變更儲存容量和 IOPS</block>
   <block id="3abe9a67eae0ad33b1c96ff4ae8b1eaa" category="inline-link-macro">變更儲存容量和 IOPS</block>
-  <block id="45d8831f16b41217c4087275e351f716" category="paragraph">您現在可以<block ref="5a81e5cffb3de2e4ff731d59ff35b987" category="inline-link-macro-rx"></block>在建立 FSx for ONTAP工作環境後隨時。</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
   <block id="ca9bb4e7ad7b9dd541f6f55e7b321568" category="section-title">*我的財產*功能</block>
   <block id="8427e95422b20518ebfdf9669981c983" category="paragraph">如果您之前向 Cloud Manager 提供了您的 AWS 憑證，則新的 *My estate* 功能可以自動發現並建議使用 Cloud Manager 新增和管理 FSx for ONTAP檔案系統。您也可以透過「我的財產」標籤查看可用的資料服務。</block>
   <block id="690df0feee64ee1dfd9e2fabd3bd7196" category="inline-link-macro">使用「我的資產」探索 FSx for ONTAP</block>
-  <block id="0d984c201ccfc0cec47c6e9aaaa3548c" category="paragraph"><block ref="0d984c201ccfc0cec47c6e9aaaa3548c" category="inline-link-macro-rx"></block></block>
   <block id="8539ab4c6f55c58d2fab4f2b3261bde9" category="section-title">更改吞吐能力</block>
   <block id="e2399171d04de4904bc9ceb3e1c97260" category="inline-link-macro">改變吞吐能力</block>
-  <block id="9b453da7e373871ff96466f7161324e9" category="paragraph">您現在可以<block ref="0dcb65269029cdd4c021d02aa3f3aa08" category="inline-link-macro-rx"></block>在建立 FSx for ONTAP工作環境後隨時。</block>
   <block id="016049d3662ab4f0c21871ed98f2bb37" category="section-title">複製和同步數據</block>
   <block id="355f4b7dc88e30a7b88e1e6ad4fce00a" category="paragraph">現在，您可以使用 FSx for ONTAP作為來源，將資料複製並同步到本機和其他 FSx for ONTAP系統。</block>
   <block id="747d46ff7f4432b15fb87d52f7f0ff2a" category="section-title">建立 iSCSI 卷</block>
@@ -669,16 +651,13 @@
   <block id="d79900702dea0a3cbd86163202f91f3a" category="section-title">支援單一或多個可用區域</block>
   <block id="f0e3a414b681f7ab90a3f742f40c9365" category="paragraph">現在您可以選擇單一或多個可用區 HA 部署模型。</block>
   <block id="324197c492971b6abe6108b6ed0e2722" category="inline-link-macro">建立 FSx for ONTAP工作環境</block>
-  <block id="abe867b96960cc2af1f7063ddfd2ca6d" category="paragraph"><block ref="abe867b96960cc2af1f7063ddfd2ca6d" category="inline-link-macro-rx"></block></block>
   <block id="4869939e49d1dbdd540bc87d62436a3f" category="section-title">支援 GovCloud 帳號身份驗證</block>
   <block id="1d83e69fc7f9ed326713517b984b155b" category="paragraph">Cloud Manager 現在支援 AWS GovCloud 帳戶身份驗證。</block>
   <block id="d8a56d983b91f097e5ba55dd03a18509" category="inline-link-macro">設定 IAM 角色</block>
-  <block id="994f04734d0bda22f0c527103d6be0c9" category="paragraph"><block ref="994f04734d0bda22f0c527103d6be0c9" category="inline-link-macro-rx"></block></block>
   <block id="ba26e4556a0f160834687982b0479336" category="section-title">2022年2月27日</block>
   <block id="3152521594c71809f9c72383294b05b7" category="section-title">承擔 IAM 角色</block>
   <block id="1bae6acf64b673783a7e55db59c7f74e" category="paragraph">當您建立 FSx for ONTAP工作環境時，您現在必須提供 Cloud Manager 可以承擔的 IAM 角色的 ARN 來建立 FSx for ONTAP工作環境。您之前需要提供 AWS 存取金鑰。</block>
   <block id="f63d604edef29843d35ad367e0d82814" category="inline-link-macro">了解如何設定 FSx for ONTAP 的權限</block>
-  <block id="5b258d27d1686d8aff26c4da65f8b510" category="paragraph"><block ref="1b53e429ea3df93a4ea7e25c176ae236" category="inline-link-macro-rx"></block> 。</block>
   <block id="784044bd2af30d58bbb0dbcea3adbad6" category="section-title">2021年10月31日</block>
   <block id="5b80dcfe3dbe5a2279a764bb895220e8" category="section-title">使用 Cloud Manager API 建立 iSCSI 卷</block>
   <block id="c9901681b19037cfe4d776eb572a7a6b" category="paragraph">您可以使用 Cloud Manager API 為 FSx for ONTAP建立 iSCSI 卷，並在您的工作環境中管理它們。</block>
@@ -692,13 +671,10 @@
   <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2021年9月2日</block>
   <block id="f65bfe10577ea64b648eddd04f107545" category="section-title">支援Amazon FSx for NetApp ONTAP</block>
   <block id="ee0913f891047fad10e625ab9754d92d" category="list-text"><block ref="9b424e413e3d5660d5b403cf87df1eb5" category="inline-link-macro-rx"></block>是一項完全託管的服務，允許客戶啟動和運行由 NetApp 的ONTAP儲存作業系統提供支援的檔案系統。  FSx for ONTAP提供NetApp客戶在本機上使用的相同功能、效能和管理功能，同時具有原生 AWS 服務的簡單性、靈活性、安全性和可擴充性。</block>
-  <block id="b1be7e05c9b9a6323c9057ee75d0c768" category="paragraph"><block ref="8b96268d04548ada8a46317048a75d5d" category="inline-link-macro-rx"></block> 。</block>
   <block id="9d2704a937df8ec429bf2446953b2687" category="list-text">您可以在 Cloud Manager 中設定 FSx for ONTAP工作環境。</block>
   <block id="154f5271f725905c77563d2d1d8b3a0a" category="inline-link-macro">建立Amazon FSx for NetApp ONTAP工作環境</block>
-  <block id="9d2d8ed54095e2ac19a91e1fafd44dab" category="paragraph"><block ref="78c1bb33bbb453f41ca8a4b947f8849c" category="inline-link-macro-rx"></block> 。</block>
   <block id="7965f44d9657c905774d8d427141b845" category="list-text">使用 AWS 和 Cloud Manager 中的連接器，您可以建立和管理磁碟區、複製資料以及將 FSx for ONTAP與NetApp雲端服務（例如 Data Sense 和Cloud Sync）整合。</block>
   <block id="c8b596b90101edd9745fcaebc95d3b53" category="inline-link-macro">開始使用適用於Amazon FSx for NetApp ONTAP 的Cloud Data Sense</block>
-  <block id="9392a234f812a64a7add82bf3ea440ce" category="paragraph"><block ref="6c403399a6912b636ecf2c35a037d6c1" category="inline-link-macro-rx"></block> 。</block>
   <block id="43b4294e45d050f67fee147cb135d9a1" category="sidebar">Amazon FSx for NetApp ONTAP將ONTAP的全部功能引入原生 AWS 託管服務，提供一致的混合雲體驗。本文檔說明如何在NetApp Console中管理 FSx for ONTAP 。</block>
   <block id="3d95977da954d4141dfd559fa32877b9" category="sidebar">Amazon FSx for NetApp ONTAP管理</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始</block>
@@ -715,4 +691,28 @@
   <block id="9a11eb5da5d06e3593dc6b41553d97e5" category="sidebar">設定權限</block>
   <block id="2e0c4c64c2671f5575eb184e577dcdae" category="sidebar">使用 Tracker 監控操作</block>
   <block id="0cfaf6a49176a923e222087e749df9d1" category="sidebar">從項目中刪除檔案系統</block>
+  <block id="2589825e52eb6a743cd2444d532a9610" category="paragraph">什麼時候<block ref="8e11b36d0e9bb1b7a8980d9e69ab4255" category="inline-link-macro-rx"></block>，您可以指定每週 30 分鐘維護窗口的開始時間，以確保維護不會與關鍵業務活動衝突。</block>
+  <block id="906e7208217591c6267d4cc84de59818" category="paragraph"><block ref="906e7208217591c6267d4cc84de59818" category="inline-link-macro-rx"></block></block>
+  <block id="75da634c097e8a6c6dd305ee0d26dc22" category="paragraph">如果您現有的 FSx for ONTAP檔案系統未與工作區關聯，我們將協助您將它們與BlueXP中的工作區關聯。你可以<block ref="c01ceb66a52f582162c04c38cf1f12cc" category="inline-link-macro-rx"></block>從BlueXP控制台內部。選擇*Workload Factory*作為服務。</block>
+  <block id="961def408efac14eeda6b911f07619f9" category="paragraph"><block ref="961def408efac14eeda6b911f07619f9" category="inline-link-macro-rx"></block></block>
+  <block id="73ff7e83001d865f3b8b3f3b309f7b7b" category="paragraph"><block ref="73ff7e83001d865f3b8b3f3b309f7b7b" category="inline-link-macro-rx"></block></block>
+  <block id="f9497449a09595c4d23248602a3a1bc3" category="paragraph"><block ref="f9497449a09595c4d23248602a3a1bc3" category="inline-link-macro-rx"></block></block>
+  <block id="d3ce4781c2dc4ba4dfa01f4c7e64f25f" category="list-text"><block ref="d3ce4781c2dc4ba4dfa01f4c7e64f25f" category="inline-link-macro-rx"></block></block>
+  <block id="6d360c2902addff4598434463c4c67e7" category="list-text"><block ref="6d360c2902addff4598434463c4c67e7" category="inline-link-macro-rx"></block></block>
+  <block id="72d84220bc74a65487a313bd058edb1e" category="paragraph"><block ref="72d84220bc74a65487a313bd058edb1e" category="inline-link-macro-rx"></block></block>
+  <block id="f6c0c8f8ded4c6640c1e912821c43739" category="paragraph"><block ref="f6c0c8f8ded4c6640c1e912821c43739" category="inline-link-macro-rx"></block></block>
+  <block id="1e155daf6f11847fd4e4d8a7154301fd" category="inline-link-macro">NetApp Console發行說明。</block>
+  <block id="d14b43405cc49caff7e93e0a31952c5a" category="paragraph">有關更改的詳細信息，請參閱<block ref="68413170a628412306b51347743a5acc" category="inline-link-macro-rx"></block></block>
+  <block id="f7a4243123ba1fee283e147900279495" category="paragraph">對於特定於NetApp Console或NetApp儲存解決方案和服務的一般和技術支援問題，您可以使用NetApp組織級序號開啟NetApp支援票證。你需要<block ref="d9dbcfc870597fd4586b8d88fb1768c5" category="inline-link-macro-rx"></block>啟動支援。</block>
+  <block id="86f3960c32804f38e5782e37c944e308" category="paragraph">在建立工作環境時，您現在可以使用BlueXP<block ref="4467df131c1939ef3f22d81267903145" category="inline-link-macro-rx"></block>僅允許所選 VPC 內的流量。此功能<block ref="a27de00b77edd8ddaac91e94bb910700" category="inline-link-macro-rx"></block>。</block>
+  <block id="5cf52be73fff384c9208944a27bc32f6" category="paragraph">現在您可以選擇啟用<block ref="9c6002fcb59f366cc37cb4ffd5f8dbdf" category="inline-link-macro-rx"></block>根據需求新增增量儲存。自動容量管理定期輪詢叢集以評估需求，並自動以 10% 的增量增加儲存容量，直到達到叢集最大容量的 80%。</block>
+  <block id="6716df247d551960c8f14510c5f7db45" category="paragraph">您現在可以<block ref="eb288a4540f5477c7b6fd63a964a7ba6" category="inline-link-macro-rx"></block>在建立 FSx for ONTAP工作環境後隨時。</block>
+  <block id="e7b9a859f78fbb16f4cc1171458b8107" category="paragraph"><block ref="e7b9a859f78fbb16f4cc1171458b8107" category="inline-link-macro-rx"></block></block>
+  <block id="121449d33c1f0006e85da38bbb5d2b05" category="paragraph">您現在可以<block ref="4443a46ef9b877ac8ee7dbd53998ec4b" category="inline-link-macro-rx"></block>在建立 FSx for ONTAP工作環境後隨時。</block>
+  <block id="0f59428ea7cc0a26120c3ed49892f7d3" category="paragraph"><block ref="0f59428ea7cc0a26120c3ed49892f7d3" category="inline-link-macro-rx"></block></block>
+  <block id="6b8b828ce4ef54a33f585a112dd2b430" category="paragraph"><block ref="6b8b828ce4ef54a33f585a112dd2b430" category="inline-link-macro-rx"></block></block>
+  <block id="1b7624e7d2d5b0be09d42164f15e54ab" category="paragraph"><block ref="fd98142f4ebda6754e4aae27b0636722" category="inline-link-macro-rx"></block>。</block>
+  <block id="41f8e9d9e5f2e80fb5cebbaaaad76380" category="paragraph"><block ref="9e4b5c7d2719383d4b562647d96e828f" category="inline-link-macro-rx"></block>。</block>
+  <block id="71c7be202aa5492f058c76c96014b63b" category="paragraph"><block ref="fb5df87a9aa49fef6376b2c5fbd872f7" category="inline-link-macro-rx"></block>。</block>
+  <block id="d1ce6a0a7c0c88afef0bcb3a4052d20f" category="paragraph"><block ref="7a62940b2cbfbe2f0f4e47d8680ba67c" category="inline-link-macro-rx"></block>。</block>
 </blocks>

@@ -108,4 +108,4 @@ https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services
 
 Amazon FSx for NetApp ONTAP是 AWS 第一方解決方案。如果您對 FSx for ONTAP檔案系統、基礎架構或任何使用此服務的解決方案有疑問或技術支援問題，請使用 AWS 管理主控台中的支援中心向 AWS 提交支援案例。選擇“FSx for ONTAP”服務和適當的類別。提供建立 AWS 支援案例所需的其餘資訊。
 
-對於特定於NetApp Console或NetApp儲存解決方案和服務的一般和技術支援問題，您可以使用NetApp組織級序號開啟NetApp支援票證。你需要link:https://docs.netapp.com/us-en/console-fsx-ontap/support/task-support-registration.html["註冊您的NetApp組織"^]啟動支援。
+對於特定於NetApp Console或NetApp儲存解決方案和服務的一般和技術支援問題，您可以使用NetApp組織級序號開啟NetApp支援票證。你需要link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/support/task-support-registration.html["註冊您的NetApp組織"^]啟動支援。
