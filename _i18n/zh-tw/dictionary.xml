@@ -705,7 +705,6 @@
   <block id="71c7be202aa5492f058c76c96014b63b" category="paragraph"><block ref="fb5df87a9aa49fef6376b2c5fbd872f7" category="inline-link-macro-rx"></block>。</block>
   <block id="d1ce6a0a7c0c88afef0bcb3a4052d20f" category="paragraph"><block ref="7a62940b2cbfbe2f0f4e47d8680ba67c" category="inline-link-macro-rx"></block>。</block>
   <block id="fbbad2021b0a185cdad950acc088e8d4" category="doc">支援本機ONTAP系統與 FSx for ONTAP檔案系統之間的複製</block>
-  <block id="6b3e3878a5fe9ddfda803127234f4a18" category="paragraph">NetApp Console中的 FSx for ONTAP檔案系統支援在本機ONTAP系統和 FSx for ONTAP檔案系統之間進行資料複製。</block>
   <block id="fed6a821ac698aa9a5bb359850dda501" category="paragraph">若要建立或管理 FSx for ONTAP檔案系統，您需要在NetApp Console中新增 AWS 憑證，方法是提供 IAM 角色的 ARN，該角色授予從NetApp Console建立 FSx for ONTAP系統所需的權限。</block>
   <block id="627148ff982de23897329c1203761c95" category="inline-link-macro">了解更多權限資訊</block>
   <block id="8917975c8444540f1ee9ac0cc5ca14cd" category="paragraph">在 Workload Factory 中從儲存為 FSx for ONTAP新增憑證時，您需要決定要授予哪些權限原則。若要發現 AWS 資源（例如 FSx for ONTAP檔案系統），您需要檢視、規劃和分析權限。若要為ONTAP檔案系統部署 FSx，您需要 _檔案系統建立和刪除_ 權限。無需權限即可對ONTAP上的 FSx 執行基本操作。<block ref="c61145cf60b5d306fe2b08006e1316ec" category="inline-link-macro-rx"></block>。</block>
@@ -716,4 +715,5 @@
   <block id="608f85440a5eadcbb4a9ce50bb7dda50" category="list-text">要在兩個 FSx for ONTAP檔案系統之間或在本機ONTAP系統和 FSx for ONTAP檔案系統之間複製數據，您必須選擇具有與檔案系統連接的控制台代理，或進入檔案系統以關聯連結。</block>
   <block id="5f72153c430537b3e27deff7329da0d0" category="list-text">在NetApp Console系統頁面中，將來源 FSx for ONTAP檔案系統或本機ONTAP系統拖曳到目標 FSx for ONTAP檔案系統上，然後選擇「複製」。</block>
   <block id="1760c97f466ea374318a8c0bedcb2aff" category="section-title">2025年11月11日</block>
+  <block id="1387404b18ce63590b24c55d54d3ff43" category="paragraph">在NetApp Console系統頁面上，可以在本機ONTAP系統和 FSx for ONTAP檔案系統之間進行資料複製。</block>
 </blocks>

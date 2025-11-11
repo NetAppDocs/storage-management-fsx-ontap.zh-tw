@@ -6,6 +6,6 @@
 
 === 支援本機ONTAP系統與 FSx for ONTAP檔案系統之間的複製
 
-NetApp Console中的 FSx for ONTAP檔案系統支援在本機ONTAP系統和 FSx for ONTAP檔案系統之間進行資料複製。
+在NetApp Console系統頁面上，可以在本機ONTAP系統和 FSx for ONTAP檔案系統之間進行資料複製。
 
 link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-manage-fsx-systems.html#replicate-data["複製數據"]
