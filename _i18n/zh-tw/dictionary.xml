@@ -97,8 +97,6 @@
   <block id="6b117b21bf1afabb5a312619e535e582" category="paragraph">憑證和權限透過NetApp Workload Factory進行管理。  Workload Factory 是一個生命週期管理平台，旨在幫助使用者使用Amazon FSx for NetApp ONTAP檔案系統優化工作負載。  NetApp Console使用與 Workload Factory 相同的一組 AWS 憑證和權限。</block>
   <block id="2eeecbf656db25d1c621552e4d4ca863" category="paragraph">Workload Factory 介面為 FSx for ONTAP使用者提供了啟用儲存、VMware、資料庫和 GenAI 等工作負載功能以及選擇工作負載權限的選項。  _Storage_ 是 Workload Factory 中的儲存管理功能，也是您建立和管理 FSx for ONTAP檔案系統所需啟用和新增憑證的唯一功能。</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="section-title">關於此任務</block>
-  <block id="4dacf6e0adb6ed0f64acd514a486bf8a" category="inline-link-macro">了解有關操作模式的更多信息</block>
-  <block id="a87a7657961ed8427e0ec863fc405fb4" category="paragraph">在從 Workload Factory 中的儲存空間為 FSx for ONTAP新增憑證時，您需要決定要在哪個層級的權限或_操作模式_下進行操作。若要發現並部署 AWS 資源（如 FSx for ONTAP檔案系統），您需要_唯讀_或_讀/寫_權限。除非您選擇「唯讀」模式或「讀取/寫入」模式，否則 FSx for ONTAP將以「基本」模式運作。  _唯讀_與檢視權限相同。 _讀/寫_與操作權限相同。<block ref="d6d34839020cc53cd6cb3ac295769611" category="inline-link-macro-rx"></block> 。</block>
   <block id="d396bcde35d40ba871e0e0c3704be40c" category="paragraph">可以從「*憑證*」頁面上的「管理」選單中查看新的和現有的 AWS 憑證。</block>
   <block id="b34e9b22e049f50831f2226787b16920" category="inline-image-macro">NetApp Console管理選單中反白顯示的管理選單和憑證選項的螢幕截圖。</block>
   <block id="3534442d318d2d9d6a10bd91ad30238d" category="paragraph"><block ref="3534442d318d2d9d6a10bd91ad30238d" category="inline-image-macro-rx" type="image"></block></block>
@@ -124,13 +122,8 @@
   <block id="643bb3986a2755c5582d9f82862ff934" category="paragraph">在本節中，您將選擇作為這些憑證的一部分進行管理的儲存功能，以及為儲存啟用的權限。您也可以選擇其他工作負載，例如資料庫、GenAI 或 VMware。做出選擇後，您需要從 Codebox 複製每個選定工作負載的政策權限，並將其新增至 AWS 帳戶內的 AWS 管理控制台以建立政策。</block>
   <block id="eb73cd2a4bbc3dbb4bbab5f5a9b6fb8d" category="list-text">從「建立策略」部分，啟用您想要包含在這些憑證中的每個工作負載功能。啟用*儲存*來建立和管理檔案系統。</block>
   <block id="3b9b789374908017040d97f81eb4008d" category="paragraph">您可以稍後新增其他功能，因此只需選擇目前想要部署和管理的工作負載即可。</block>
-  <block id="a488a73463d70a082950f1cd09a4be8c" category="inline-link-macro">了解權限，也稱為操作模式</block>
-  <block id="173ea16b498d7c64e87a722e884ac9d6" category="list-text">對於那些提供權限等級選擇（唯讀或讀取/寫入）的工作負載功能，請選擇這些憑證可用的權限類型。<block ref="1b00b1a76801899cea6526d97ddbb2de" category="inline-link-macro-rx"></block> 。</block>
   <block id="04c38dfa84592feebab3e30dfe4a019a" category="list-text">選用：選擇*啟用自動權限檢查*以檢查您是否具有完成工作負載操作所需的 AWS 帳戶權限。啟用檢查將會新增<block ref="23bd3e826a13b6d94db9e07f105dfed2" prefix=" " category="inline-code"></block>您的許可政策。此權限的目的僅是為了確認權限。您可以在新增憑證後刪除該權限，但我們建議保留它以防止為部分成功的操作建立資源並避免任何所需的手動資源清理。</block>
   <block id="6d45b51df5e4b4d742aed3a012be7ece" category="list-text">在 Codebox 視窗中，複製第一個 IAM 策略的權限。</block>
-  <block id="45f2112a5aef07c91c1003cce4dc5410" category="paragraph">也可以從以下選項卡複製儲存權限。</block>
-  <block id="afcef91c603f5a2caaca0c02452c1093" category="open-title">只讀權限</block>
-  <block id="6c89d11178770d48b64eed2f5ad15ee0" category="open-title">讀/寫權限</block>
   <block id="d9951e6a22fb7f7d403d017e5b8ef9c6" category="list-text">開啟另一個瀏覽器視窗並在 AWS 管理主控台中登入您的 AWS 帳戶。</block>
   <block id="0545945650ae73f856cfac5d203df5f5" category="list-text">開啟 IAM 服務，然後選擇 *政策* &gt; *建立政策*。</block>
   <block id="27b582bcbcca0fd418f9f9f855710d0a" category="list-text">選擇 JSON 作為檔案類型，貼上您在步驟 3 中複製的權限，然後選擇 *下一步*。</block>
@@ -514,14 +507,10 @@
   <block id="4445ca9504f7ce2f198006088a6a0db6" category="paragraph">NetApp Data Classification可讓您掃描和分類組織混合多雲中的資料。</block>
   <block id="9d79f74e1dd8a7371bdf2a808029dff7" category="inline-link-macro">開始使用NetApp Data Classification</block>
   <block id="ce269f36061333cca0642955f85d7893" category="paragraph"><block ref="ce269f36061333cca0642955f85d7893" category="inline-link-macro-rx"></block></block>
-  <block id="19b968cb9177960607f64a12abfa5472" category="paragraph">複製資料以支援備份和災難復原。可以使用NetApp Replication完成 FSx for ONTAP檔案系統與Cloud Volumes ONTAP之間，或 FSx for ONTAP檔案系統與本機ONTAP系統之間的資料複製。透過複製，您可以在ONTAP儲存系統之間複製數據，以支援到雲端或雲端之間的備份和災難復原。</block>
   <block id="92b1e4e9a286587a318f472489c82e8e" category="inline-link-macro">開始使用NetApp Replication</block>
   <block id="6f9ae9c6f20f6845319426c218c26fa9" category="paragraph"><block ref="6f9ae9c6f20f6845319426c218c26fa9" category="inline-link-macro-rx"></block></block>
-  <block id="b6557cbd5121437883021e5b19d4db36" category="paragraph">可以透過NetApp Console系統頁面在兩個 FSx for ONTAP檔案系統之間進行資料複製。</block>
   <block id="513c180c5d2a9ee1b68bcde16bb98445" category="paragraph">在開始之前請考慮以下事項。</block>
-  <block id="3149241572a82823e44abfd395fcbc2d" category="list-text">要在兩個 FSx for ONTAP檔案系統之間複製數據，您必須選擇一個與檔案系統具有連接的連接器或輸入檔案系統以關聯連結。</block>
   <block id="28a7654ba403e8d0905895e340495ea0" category="list-text">對於處於可用、已建立或配置錯誤以外的狀態的捲，以及ONTAP版本不相容的捲，不支援複製。</block>
-  <block id="ab4ae954fd784a9ce0e9a2689965c28a" category="list-text">從NetApp Console系統頁面中，將來源 FSx for ONTAP檔案系統拖曳到目標 FSx for ONTAP檔案系統的頂部，然後選擇 *複製*。</block>
   <block id="9793db8d97a651febf9f052b60487a84" category="list-text">在「建立複製」頁面上，選擇要複製的來源卷，然後按一下「下一步」。</block>
   <block id="5bc67df36eab9c2f7b3c55d3f683100e" category="list-text">在複製目標下，提供以下內容：</block>
   <block id="5b68795341e694ebff565b0ddc6697b3" category="list-text">*目標名稱*：目標名稱是在畫布中執行拖放操作時先前選擇的。</block>
@@ -715,4 +704,16 @@
   <block id="41f8e9d9e5f2e80fb5cebbaaaad76380" category="paragraph"><block ref="9e4b5c7d2719383d4b562647d96e828f" category="inline-link-macro-rx"></block>。</block>
   <block id="71c7be202aa5492f058c76c96014b63b" category="paragraph"><block ref="fb5df87a9aa49fef6376b2c5fbd872f7" category="inline-link-macro-rx"></block>。</block>
   <block id="d1ce6a0a7c0c88afef0bcb3a4052d20f" category="paragraph"><block ref="7a62940b2cbfbe2f0f4e47d8680ba67c" category="inline-link-macro-rx"></block>。</block>
+  <block id="fbbad2021b0a185cdad950acc088e8d4" category="doc">支援本機ONTAP系統與 FSx for ONTAP檔案系統之間的複製</block>
+  <block id="6b3e3878a5fe9ddfda803127234f4a18" category="paragraph">NetApp Console中的 FSx for ONTAP檔案系統支援在本機ONTAP系統和 FSx for ONTAP檔案系統之間進行資料複製。</block>
+  <block id="fed6a821ac698aa9a5bb359850dda501" category="paragraph">若要建立或管理 FSx for ONTAP檔案系統，您需要在NetApp Console中新增 AWS 憑證，方法是提供 IAM 角色的 ARN，該角色授予從NetApp Console建立 FSx for ONTAP系統所需的權限。</block>
+  <block id="627148ff982de23897329c1203761c95" category="inline-link-macro">了解更多權限資訊</block>
+  <block id="8917975c8444540f1ee9ac0cc5ca14cd" category="paragraph">在 Workload Factory 中從儲存為 FSx for ONTAP新增憑證時，您需要決定要授予哪些權限原則。若要發現 AWS 資源（例如 FSx for ONTAP檔案系統），您需要檢視、規劃和分析權限。若要為ONTAP檔案系統部署 FSx，您需要 _檔案系統建立和刪除_ 權限。無需權限即可對ONTAP上的 FSx 執行基本操作。<block ref="c61145cf60b5d306fe2b08006e1316ec" category="inline-link-macro-rx"></block>。</block>
+  <block id="a7dccda0e2845707c7752e43c8ec99c4" category="inline-link-macro">了解權限</block>
+  <block id="3accf22a176a1a0029ce245c84e87774" category="list-text">對於那些提供權限策略選擇的工作負載功能，請選擇使用這些憑證可取得的權限類型。<block ref="e5949275d6c97f4d8154c5ed72e8d3a9" category="inline-link-macro-rx"></block>。</block>
+  <block id="6f2324a9ef140c855ee143a6a8f3a97a" category="paragraph">複製資料以支援備份和災難復原。使用NetApp Replication可以實作 FSx for ONTAP檔案系統和Cloud Volumes ONTAP之間的資料複製。透過複製，您可以在ONTAP儲存系統之間複製數據，以支援到雲端或雲端之間的備份和災難復原。</block>
+  <block id="9a98b3cdae2120eee0c601730e2d0311" category="paragraph">在NetApp Console系統頁面上，可以實作兩個 FSx for ONTAP檔案系統之間以及本機ONTAP系統與 FSx for ONTAP檔案系統之間的資料複製。</block>
+  <block id="608f85440a5eadcbb4a9ce50bb7dda50" category="list-text">要在兩個 FSx for ONTAP檔案系統之間或在本機ONTAP系統和 FSx for ONTAP檔案系統之間複製數據，您必須選擇具有與檔案系統連接的控制台代理，或進入檔案系統以關聯連結。</block>
+  <block id="5f72153c430537b3e27deff7329da0d0" category="list-text">在NetApp Console系統頁面中，將來源 FSx for ONTAP檔案系統或本機ONTAP系統拖曳到目標 FSx for ONTAP檔案系統上，然後選擇「複製」。</block>
+  <block id="1760c97f466ea374318a8c0bedcb2aff" category="section-title">2025年11月11日</block>
 </blocks>

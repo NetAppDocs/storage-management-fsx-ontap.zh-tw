@@ -72,21 +72,21 @@ link:https://docs.netapp.com/us-en/data-services-data-classification/index.html[
 
 === 複製數據
 
-複製資料以支援備份和災難復原。可以使用NetApp Replication完成 FSx for ONTAP檔案系統與Cloud Volumes ONTAP之間，或 FSx for ONTAP檔案系統與本機ONTAP系統之間的資料複製。透過複製，您可以在ONTAP儲存系統之間複製數據，以支援到雲端或雲端之間的備份和災難復原。
+複製資料以支援備份和災難復原。使用NetApp Replication可以實作 FSx for ONTAP檔案系統和Cloud Volumes ONTAP之間的資料複製。透過複製，您可以在ONTAP儲存系統之間複製數據，以支援到雲端或雲端之間的備份和災難復原。
 
 link:https://docs.netapp.com/us-en/data-services-replication/task-replicating-data.html["開始使用NetApp Replication"^]
 
-可以透過NetApp Console系統頁面在兩個 FSx for ONTAP檔案系統之間進行資料複製。
+在NetApp Console系統頁面上，可以實作兩個 FSx for ONTAP檔案系統之間以及本機ONTAP系統與 FSx for ONTAP檔案系統之間的資料複製。
 
 .開始之前
 在開始之前請考慮以下事項。
 
-* 要在兩個 FSx for ONTAP檔案系統之間複製數據，您必須選擇一個與檔案系統具有連接的連接器或輸入檔案系統以關聯連結。
+* 要在兩個 FSx for ONTAP檔案系統之間或在本機ONTAP系統和 FSx for ONTAP檔案系統之間複製數據，您必須選擇具有與檔案系統連接的控制台代理，或進入檔案系統以關聯連結。
 * 對於處於可用、已建立或配置錯誤以外的狀態的捲，以及ONTAP版本不相容的捲，不支援複製。
 
 
 .步驟
-. 從NetApp Console系統頁面中，將來源 FSx for ONTAP檔案系統拖曳到目標 FSx for ONTAP檔案系統的頂部，然後選擇 *複製*。
+. 在NetApp Console系統頁面中，將來源 FSx for ONTAP檔案系統或本機ONTAP系統拖曳到目標 FSx for ONTAP檔案系統上，然後選擇「複製」。
 . 在「建立複製」頁面上，選擇要複製的來源卷，然後按一下「下一步」。
 . 在複製目標下，提供以下內容：
 +
