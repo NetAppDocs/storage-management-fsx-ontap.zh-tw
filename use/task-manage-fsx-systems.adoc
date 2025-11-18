@@ -28,7 +28,9 @@ https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["了解如何使用N
 
 == 使用ONTAP系統管理員管理檔案系統
 
-您可以使用ONTAP系統管理員介面直接從控制台管理 FSx for ONTAP檔案系統。使用系統管理員需要控制台代理程式。
+您可以使用ONTAP系統管理員介面直接從控制台管理 FSx for ONTAP檔案系統。使用系統管理員需要控制台代理程式或 AWS Lambda 連結。
+
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["了解如何使用連結"^]
 
 
 

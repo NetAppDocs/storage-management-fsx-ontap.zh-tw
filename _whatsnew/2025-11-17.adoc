@@ -1,0 +1,9 @@
+= 使用 AWS Lambda 連結時，系統管理員可用。
+:allow-uri-read: 
+
+
+
+
+=== 使用 AWS Lambda 連結時，系統管理員可用。
+
+ONTAP系統管理器介面可以與 AWS Lambda 連結一起使用，以執行進階ONTAP作業。這提供了一種替代使用系統管理器控制台代理的方案，可以直接從控制台管理ONTAP的 FSx 檔案系統。 link:https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["了解如何使用連結進行進階ONTAP操作"^]
