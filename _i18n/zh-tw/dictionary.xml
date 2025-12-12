@@ -722,4 +722,5 @@
   <block id="eedc611f4a0b9ac93cb166f88e46128a" category="inline-link-macro">了解如何使用連結</block>
   <block id="61b7909f43b8222037001004e52dc71c" category="paragraph"><block ref="61b7909f43b8222037001004e52dc71c" category="inline-link-macro-rx"></block></block>
   <block id="b566b4df138c2254f68b7631cba29c1d" category="section-title">2025年11月17日</block>
+  <block id="e581684dcb328343d1f63d6cb9035ad9" category="list-text">以下區域不支援發現：中國區域、GovCloud（美國）區域、Secret Cloud 和 Top Secret Cloud。</block>
 </blocks>
