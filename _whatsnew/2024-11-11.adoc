@@ -11,5 +11,3 @@ FSx for ONTAP檔案系統管理任務（例如新增磁碟區、擴充檔案系�
 link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html#features["了解BlueXP workload factory中的 FSx for ONTAP功能"^]
 
 如果您正在尋找「進階視圖」選項，該選項可讓您使用ONTAP系統管理員管理 FSx for ONTAP檔案系統，那麼您現在可以在選擇工作環境後從BlueXP畫布中找到該選項。
-
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-fsx-ontap/main/media/screenshot-system-manager.png["選擇工作環境後， BlueXP Canvas 右側面板的螢幕截圖，其中顯示了系統管理員選項。"]

@@ -17,8 +17,6 @@
   <block id="67c7aeb67508aad4a1a5b35bdab67864" category="inline-link-macro">了解BlueXP workload factory中的 FSx for ONTAP功能</block>
   <block id="9043e597fd1a3537f95cd09a004d83dc" category="paragraph"><block ref="9043e597fd1a3537f95cd09a004d83dc" category="inline-link-macro-rx"></block></block>
   <block id="622ad6297367666ca450d994236cbc2d" category="paragraph">如果您正在尋找「進階視圖」選項，該選項可讓您使用ONTAP系統管理員管理 FSx for ONTAP檔案系統，那麼您現在可以在選擇工作環境後從BlueXP畫布中找到該選項。</block>
-  <block id="50a397404296b3dd547fbabeb18e9092" category="inline-image-macro">選擇工作環境後， BlueXP Canvas 右側面板的螢幕截圖，其中顯示了系統管理員選項。</block>
-  <block id="66cff4f3970f46872862ee60b7f0a832" category="paragraph"><block ref="66cff4f3970f46872862ee60b7f0a832" category="inline-image-macro-rx" type="image"></block></block>
   <block id="16e305f77c7a0272aceac8c95312d98a" category="doc">NetApp發布更多 Clo​​Formation 資源</block>
   <block id="c043b3439543ebfc027a3c1fcb5613a5" category="paragraph">NetApp現在提供 CloudFormation 資源，讓客戶可以利用 AWS 控制台中未公開的高階ONTAP元件。 CloudFormation 是 AWS 的基礎架構即程式碼機制。您將能夠建立複製關係、CIFS 共用、NFS 匯出策略、快照等。</block>
   <block id="01d4e72c68c36e8905e55eeb7f8aff0c" category="inline-link-macro">使用 CloudFormation 管理Amazon FSx for NetApp ONTAP檔案系統</block>
@@ -176,7 +174,6 @@
   <block id="aeb31c9f8c311597856b129ab948b4e6" category="inline-link">NetApp Workload Factory</block>
   <block id="2c6d3a7f89afc9964121c1b114a56714" category="paragraph">在NetApp Console系統頁面，您可以建立和發現 FSx for ONTAP系統並使用系統管理員和其他NetApp服務。如果您要管理 FSx for ONTAP系統和在Amazon FSx for NetApp ONTAP上執行的工作負載，請使用<block ref="fb3b6c773a24cacae7230400ab3161da" category="inline-link-rx"></block>。</block>
   <block id="0274c25cd39fea1cd6fb3e820df70e7f" category="inline-link-macro">了解如何從NetApp Console建立和發現 FSx for ONTAP系統</block>
-  <block id="712fd65679ed31770d0f4093b25a23ea" category="paragraph"><block ref="a984d544f502f6adfd6ad6d305bf1f18" category="inline-link-macro-rx"></block> 。</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">特徵</block>
   <block id="5e63cf07e8c4e2bc02fec4b907bfcc00" category="list-text">無需配置或管理儲存設備、軟體或備份。</block>
   <block id="e2ab7c65b21ed8cc1c3b642b5e36429e" category="inline-link">S3</block>
@@ -410,22 +407,11 @@
   <block id="3a75f5b58f8a8c79c73ac8b3f0785afe" category="list-text">在建立 FSx for ONTAP檔案系統頁面上，選擇*快速建立*。</block>
   <block id="f33ee1d7e309154be1fc329fad0ad653" category="paragraph">您也可以載入已儲存的配置。</block>
   <block id="7c6859274ee77ca082be3dcb424a440e" category="list-text">在檔案系統常規配置下，提供以下內容：</block>
-  <block id="3c3a97c5b5c26d61cb8559738fd7175e" category="list-text">*AWS 憑證*：選擇新增 AWS 憑證或繼續而不新增憑證。無需憑證，您可以從 Codebox 複製並下載部分完整的程式碼。該程式碼可以像模板一樣使用，您可以在運行程式碼之前填寫缺少的資訊（例如，憑證）或自訂某些資料。</block>
   <block id="73834661f85b42765d73b7cd61d1475c" category="list-text">*檔案系統名稱*：輸入檔案系統的名稱。</block>
-  <block id="27db8fcb1cb750024f80a00d143ee777" category="list-text">*部署拓樸*：選擇部署拓樸。</block>
-  <block id="e1db87892ddda8bfd0cc92dbf2aa8f28" category="list-text">擴展拓撲是指使用一個檔案系統進行資料分發，並且可以增加其大小以適應資料成長。</block>
-  <block id="8dc86ca9377774615a191074143b0f0f" category="list-text">橫向擴展拓撲是指使用多個檔案系統進行資料分發。</block>
-  <block id="a27de2368abb354633f8d50b9ea7e0a2" category="list-text">*HA 對*：輸入 HA 對的數量。</block>
-  <block id="6aad0d457607a641d63a0daca3a0529a" category="list-text">對於擴充部署，您只能擁有一個 HA 對。</block>
-  <block id="56dcdb97483e2b91ea46d0e3aed1e819" category="list-text">對於橫向擴展部署，您可以擁有 2 到 12 個 HA 對。</block>
   <block id="f22c148b111a19f2c93bf5b1c1cbb2a6" category="list-text">*部署類型*：選擇部署類型。</block>
-  <block id="7069a3965ec1f768679b31ddeea0b6e4" category="list-text">單可用區 (Single-AZ) 部署：透過監控硬體故障並在發生故障時自動更換基礎設施元件來確保可用性。透過在可用區域內自動複製資料來保護其免受組件故障的影響，從而實現高耐用性。</block>
-  <block id="8860331ce66022dce5b0f67e6c8398ab" category="list-text">多可用區 (Multi-AZ) 部署：即使可用區不可用，也能提供資料的持續可用性。多可用區檔案系統支援單可用區檔案系統的所有可用性和持久性功能。多可用區檔案系統專為業務關鍵型生產工作負載而設計，這些工作負載需要對共用ONTAP檔案資料具有高可用性，並且需要跨可用區內建複製的儲存。</block>
   <block id="a578dfdba57cca5b9cde80a5e42544c6" category="list-text">*標籤*：您可以選擇新增最多 50 個標籤。</block>
-  <block id="2d65a0ce899e5ca708d5a1002a8d0a1d" category="list-text">在「網路和安全性」下的「區域和 VPC」欄位中，選擇檔案系統的區域和 VPC。</block>
   <block id="fced9e440363d93f4173eeec105848ba" category="list-text">在*檔案系統詳細資訊*下，提供以下內容：</block>
   <block id="6157c9c13988e3cea6397632d4ceff7e" category="list-text">*SSD儲存容量*：輸入儲存容量並選擇儲存容量單位。</block>
-  <block id="10a8fb0dbb0a921774745de198ad4068" category="list-text">* ONTAP憑證*：輸入您的ONTAP使用者名稱和密碼。</block>
   <block id="7966c6503cb79e36fabb3ff4e34bd3b0" category="list-text">*SMB/CIFS 設定*：可選。如果您打算使用 SMB/CIFS 協定存取卷，則必須在建立檔案系統期間為儲存 VM 配置 Active Directory。提供為此檔案系統建立的儲存虛擬機器的以下詳細資訊。</block>
   <block id="e111b3a0a259872266237c202ec504ea" category="list-text">*要加入的 Active Directory 網域*：輸入 Active Directory 的完全限定網域名稱 (FQDN)。</block>
   <block id="40d5b51d14509b2edd0b3f2e2f7b4d16" category="list-text">*DNS IP 位址*：輸入最多三個 DNS IP 位址，以逗號分隔。</block>
@@ -444,7 +430,6 @@
   <block id="6e4ae6aee9c2976cecc823f5d4e3d5db" category="paragraph">您可以透過多種方式管理 FSx for ONTAP檔案系統，例如從NetApp Console中的工作負載、使用ONTAP系統管理員以及使用 AWS CloudFormation。了解如何<block ref="2dbcf252d35932131abc9de391694341" category="inline-link-macro-rx"></block> 。</block>
   <block id="28cdc97b1969c0c544a77fde4457a7e5" category="open-title">進階創建</block>
   <block id="6805fd9faa6a9d49c19e9f0869323fd8" category="paragraph">使用進階創建，您可以設定所有設定選項，包括可用性、安全性、備份和維護。</block>
-  <block id="05d67c5923f1020ef47b7e3fb35cba6e" category="list-text">在建立 FSx for ONTAP頁面上，選擇 *進階建立*。</block>
   <block id="cf8254c1af160e61f04022f6a69ab935" category="list-text">*AWS 憑證*：選擇在 Workload Factory 中新增 AWS 憑證或繼續不使用憑證。</block>
   <block id="16babb73337008dc5c8f7dfa9f1a09b2" category="list-text">在網路和安全下，提供以下內容：</block>
   <block id="38ee1102173e9d9f4d6871edf96fc7fb" category="list-text">*區域和 VPC*：選擇檔案系統的區域和 VPC。</block>
@@ -456,9 +441,6 @@
   <block id="b98009df13b6a9c0bd5b540c1d2df378" category="list-text">*端點 IP 位址範圍*：選擇*VPC 以外的浮動 IP 位址範圍*或*輸入 IP 位址範圍*並輸入 IP 位址範圍。</block>
   <block id="adf3b9421185cf4dc6b3d80fb9c26d9b" category="list-text">*加密*：從下拉式選單中選擇加密金鑰名稱。</block>
   <block id="909443f15178d32af4981d109af80748" category="list-text">在檔案系統詳細資訊下，提供以下資訊：</block>
-  <block id="7af916ceff85ab2f29ca490366228701" category="list-text">*Provisioned IOPS*：選擇 *Automatic* 或 *User-provisioned*。</block>
-  <block id="67d537df4a9c97aa749f6724139522f5" category="list-text">*每個 HA 對的吞吐容量*：選擇每個 HA 對的吞吐容量。</block>
-  <block id="7e100ce6fb83954fbc242e5f5128907e" category="list-text">*儲存 VM 憑證*：輸入您的使用者名稱。密碼可以特定於此檔案系統，或者您可以使用輸入的ONTAP憑證相同的密碼。</block>
   <block id="31846199ab330eacea22764e7bc1ab7a" category="list-text">在備份和維護下，提供以下內容：</block>
   <block id="5a7b83bad76b38a063667e0b80bd78d6" category="list-text">*FSx for ONTAP Backup*：預設啟用每日自動備份。如果需要，請停用。</block>
   <block id="f009614070b8aab7ff6edcea9473b3dc" category="list-text">*自動備份保留期*：輸入保留自動備份的天數。</block>
@@ -723,4 +705,28 @@
   <block id="61b7909f43b8222037001004e52dc71c" category="paragraph"><block ref="61b7909f43b8222037001004e52dc71c" category="inline-link-macro-rx"></block></block>
   <block id="b566b4df138c2254f68b7631cba29c1d" category="section-title">2025年11月17日</block>
   <block id="e581684dcb328343d1f63d6cb9035ad9" category="list-text">以下區域不支援發現：中國區域、GovCloud（美國）區域、Secret Cloud 和 Top Secret Cloud。</block>
+  <block id="2f41edd6a40030a5b9782bbc67a56e19" category="paragraph"><block ref="eee6c8a030ab87fecfce06e7212b64da" category="inline-link-macro-rx"></block>。</block>
+  <block id="cf5df8345ca5f203e0f805460b558155" category="list-text">單可用區 (Single-AZ) 部署：透過監控硬體故障並在發生故障時自動更換基礎設施元件來提供可用性。透過在可用區內自動複製資料來保護資料免受元件故障的影響，從而實現高持久性。</block>
+  <block id="cc7023e1e70f83f63ba0c94135b83c2d" category="paragraph">對於高效能工作負載，或工作負載從小規模開始逐步擴展到 72 GB/s 吞吐量和 240 萬 IOPS 的情況，建議採用此配置。</block>
+  <block id="ce920fde7af8f67cbfd1ca3e8efd6b91" category="list-text">多可用區 (Multi-AZ) 部署：即使可用區不可用，也能提供資料的持續可用性。多可用區檔案系統專為業務關鍵型生產工作負載而設計，這些工作負載需要對共用ONTAP檔案資料具有高可用性，並且需要跨可用區內建複製的儲存。</block>
+  <block id="fc22ff32bfac4486f50da9af2033830e" category="paragraph">對於吞吐量高達 6 GB/s 或 200,000 IOPS 的工作負載，建議採用這種單一 HA 對配置。</block>
+  <block id="87839b96284704d104c8e445d0cfb887" category="list-text">對於第一代部署，檔案系統建立後無法減少容量。</block>
+  <block id="8d4ad9a0aaca41b1aa7122cb909588a7" category="list-text">對於第二代部署，可以在檔案系統建立後增加容量。</block>
+  <block id="02f2e108af721f7fc825883d8811e77a" category="list-text">* ONTAP憑證*：可選。請輸入您的ONTAP使用者名稱和密碼。密碼可以現在設置，也可以稍後設定。</block>
+  <block id="824994853534784eb4495b892e13b1c6" category="paragraph">如果您提供的用戶不是 fsxadmin 用戶，且之後您需要重設 fsxadmin 密碼，您可以透過 AWS 控制台執行此操作。</block>
+  <block id="6e9c833800dbc4ebe142052809560480" category="list-text">在「為ONTAP檔案系統建立 FSx」頁面上，選擇「進階建立」。</block>
+  <block id="9f9382d36e2904b74545777af65bb3d2" category="list-text">*部署類型*：選擇部署類型和檔案系統產生方式。第二代檔案系統的可用性取決於所選區域。如果所選區域不支援第二代 FSx for ONTAP檔案系統，則部署類型將切換為第一代。</block>
+  <block id="ad25ffa35c681232ceeec02144315aa5" category="paragraph">*檔案系統產生方式*：請選擇下列選項之一：</block>
+  <block id="19f3a3d53bb0ae9a377ecb1e961d2155" category="list-text">*第二代*：建議將此配置用於高效能工作負載，或工作負載從小規模開始，逐步擴展到 72 GB/s 吞吐量和 240 萬 IOPS 的情況。</block>
+  <block id="272021095e67d1fdf73f94aa211e4e56" category="list-text">*第一代*：此配置非常適合需要高達 4 GB/s 或 160,000 IOPS 的工作負載。第一代檔案系統只能增加容量。</block>
+  <block id="5ee057335585da70af1caca368e4e422" category="list-text">*第二代*：建議將此單 HA 對配置用於吞吐量高達 6 GB/s 或 200,000 IOPS 的工作負載。在多可用區 (Multi-AZ) 和第二代檔案系統中，容量可以增加或減少以符合工作負載需求。</block>
+  <block id="7ef603b4e7f8efb6252e42ef0745f9cc" category="list-text">對於第二代部署，您可以調整容量。</block>
+  <block id="6eb76be6a5409fb6f547e3cf3944cfe6" category="list-text">*每對 HA 的吞吐量*：選擇每對 HA 的吞吐量。第一代檔案系統僅支援一個 HA 對。</block>
+  <block id="ee6e43b0904c4672da5651009001b259" category="list-text">*已設定 IOPS*：請選擇下列選項之一：</block>
+  <block id="2c8c409e84df8a5368e9fc203dacd0e0" category="list-text">*自動*：對於自動模式，每創建 1 GiB，就會增加 3 個 IOPS。</block>
+  <block id="080138c9fde9abc63b7003839106198b" category="list-text">*使用者配置*：對於使用者配置，請輸入 IOPS 值。</block>
+  <block id="dd34b811cd079417f985f8f56a4f1dca" category="list-text">*儲存虛擬機器憑證*：可選。請輸入您的用戶名。密碼可以專用於此檔案系統，也可以使用與ONTAP憑證相同的密碼。密碼可以現在設置，也可以稍後設定。</block>
+  <block id="4f1bd0ace83aba374b7ff69066a53c58" category="inline-xref">安全群組詳情</block>
+  <block id="e41bac724f43b475f854e3aa1664b8de" category="paragraph">若要建立新的安全性群組，請參閱 <block ref="592b894db662c6a6a8229aea3f9a37fa" category="inline-xref-macro-rx"></block> 有關安全群組協定、連接埠和角色的描述。</block>
+  <block id="0ebb1380b6abc3243f8c020aa97f25da" category="list-text">儲存或建立檔案系統。。結果</block>
 </blocks>
