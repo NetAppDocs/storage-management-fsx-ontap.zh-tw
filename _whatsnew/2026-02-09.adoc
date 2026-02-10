@@ -1,0 +1,11 @@
+= 支援在 Cloud Volumes ONTAP 和 FSx for ONTAP 之間複寫資料
+:allow-uri-read: 
+
+
+
+
+=== 支援在 Cloud Volumes ONTAP 和 FSx for ONTAP 之間複寫資料
+
+現在可以透過 NetApp Console 在 Cloud Volumes ONTAP 系統和 FSx for ONTAP 檔案系統之間進行資料複製。
+
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-replicate-data.html["複製數據"]

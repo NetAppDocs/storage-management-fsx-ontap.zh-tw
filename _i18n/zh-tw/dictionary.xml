@@ -346,7 +346,6 @@
   <block id="e7e9f49f4584c68b9d97c578e73b7583" category="list-text">在控制台的右上角，選擇「幫助」圖標，然後選擇「*支援*」。</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">從支援註冊頁面找到您的帳戶 ID 序號。</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">幫助選單的螢幕截圖，其中支援是第一個選項</block>
-  <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetApp 的支援註冊網站</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">導航至<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block>並選擇*我不是註冊的NetApp客戶*。</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">填寫必填欄位（帶有紅色星號的欄位）。</block>
@@ -369,7 +368,6 @@
   <block id="5bc1315a63455544e7a917a7cc968939" category="paragraph">這些 NSS 憑證與您的特定控制台帳戶 ID 相關聯。屬於控制台組織的使用者可以從*支援 &gt; NSS 管理*存取這些憑證。</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">如果您有客戶級帳戶，則可以新增一個或多個 NSS 帳戶。</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">如果您有合作夥伴或經銷商帳戶，則可以新增一個或多個 NSS 帳戶，但不能與客戶級帳戶一起新增。</block>
-  <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">選擇*NSS 管理 &gt; 新增 NSS 帳號*。</block>
   <block id="85b9386ed443776127e099931d73448a" category="list-text">當出現提示時，選擇「*繼續*」以重新導向至 Microsoft 登入頁面。</block>
   <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp使用 Microsoft Entra ID 作為特定於支援和授權的身份驗證服務的身份提供者。</block>
@@ -381,8 +379,6 @@
   <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">如果您已有客戶級 NSS 帳戶並嘗試新增合作夥伴級帳戶，情況也是如此。</block>
   <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">成功登入後， NetApp將儲存 NSS 使用者名稱。</block>
   <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">三個水平點的圖標</block>
-  <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">這是系統產生的映射到您的電子郵件的 ID。在*NSS 管理*頁面上，您可以顯示來自<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block>菜單。</block>
-  <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">如果您需要刷新登入憑證令牌，還有一個*更新憑證*選項<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block>菜單。</block>
   <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">使用此選項會提示您再次登入。請注意，這些帳戶的令牌將在 90 天後過期。我們將發布通知來提醒您此事。</block>
   <block id="fb88ab98d0ec536d50b32178bf99d0a5" category="summary">建立或發現 FSx for ONTAP檔案系統，以便從NetApp Console新增和管理磁碟區和其他資料服務。</block>
   <block id="47dffe46f483dc8772ef312e93c97c16" category="doc">建立或發現 FSx for ONTAP檔案系統</block>
@@ -466,7 +462,6 @@
   <block id="3d524a57e639824787f68c6f88019427" category="doc">在NetApp Console中管理 FSx for ONTAP檔案系統</block>
   <block id="2ec8c048ff53a4cbdbdfc16422f78635" category="paragraph">在NetApp Console中建立或發現 FSx for ONTAP系統後，您可以透過建立磁碟區、管理儲存虛擬機器、保護資料和管理檔案系統來管理檔案系統。控制台還可讓您使用提供備份和復原、資料分類、資料同步等功能的資料服務。</block>
   <block id="dd18b57adc37ce8de554a386a79bc9da" category="section-title">使用NetApp Workloads 管理檔案系統</block>
-  <block id="78b4a72578eb8561c1acd4b3676233e6" category="paragraph">當您從NetApp Console系統頁面開啟 FSx for ONTAP系統時，您將進入NetApp工作負載。  Workloads 是一種智慧優化和自動化服務，它使用行業最佳實踐來設計、設定和操作使用Amazon FSx for NetApp ONTAP 的關鍵工作負載。</block>
   <block id="580649b6592437bd283b108bcef22b7d" category="inline-link">了解如何使用NetApp Workloads 管理檔案系統</block>
   <block id="14aa34371e663d81da2ce38739cae4bc" category="paragraph"><block ref="14aa34371e663d81da2ce38739cae4bc" category="inline-link-rx"></block></block>
   <block id="9a7d7fe4ea2506122f2a5355c685706e" category="section-title">使用ONTAP系統管理員管理檔案系統</block>
@@ -488,13 +483,9 @@
   <block id="4445ca9504f7ce2f198006088a6a0db6" category="paragraph">NetApp Data Classification可讓您掃描和分類組織混合多雲中的資料。</block>
   <block id="9d79f74e1dd8a7371bdf2a808029dff7" category="inline-link-macro">開始使用NetApp Data Classification</block>
   <block id="ce269f36061333cca0642955f85d7893" category="paragraph"><block ref="ce269f36061333cca0642955f85d7893" category="inline-link-macro-rx"></block></block>
-  <block id="92b1e4e9a286587a318f472489c82e8e" category="inline-link-macro">開始使用NetApp Replication</block>
-  <block id="6f9ae9c6f20f6845319426c218c26fa9" category="paragraph"><block ref="6f9ae9c6f20f6845319426c218c26fa9" category="inline-link-macro-rx"></block></block>
   <block id="513c180c5d2a9ee1b68bcde16bb98445" category="paragraph">在開始之前請考慮以下事項。</block>
-  <block id="28a7654ba403e8d0905895e340495ea0" category="list-text">對於處於可用、已建立或配置錯誤以外的狀態的捲，以及ONTAP版本不相容的捲，不支援複製。</block>
   <block id="9793db8d97a651febf9f052b60487a84" category="list-text">在「建立複製」頁面上，選擇要複製的來源卷，然後按一下「下一步」。</block>
   <block id="5bc67df36eab9c2f7b3c55d3f683100e" category="list-text">在複製目標下，提供以下內容：</block>
-  <block id="5b68795341e694ebff565b0ddc6697b3" category="list-text">*目標名稱*：目標名稱是在畫布中執行拖放操作時先前選擇的。</block>
   <block id="562c87a680d962135f8e44bc0d159259" category="list-text">*儲存虛擬機器名稱*：從下拉式選單中選擇儲存虛擬機器。您選擇的儲存虛擬機器是此複製關係中所有選定磁碟區的目標。</block>
   <block id="56aeb18822215ccd01a9293a40c3b44a" category="list-text">*磁碟區名稱*：目標磁碟區名稱自動生成，格式如下<block ref="4b5beb37da0fa6444b7f9f92238aadb1" prefix=" " category="inline-code"></block>。您可以使用自動產生的磁碟區名稱或輸入其他磁碟區名稱。</block>
   <block id="d3de0d39919d3426b0b013a4457e21ff" category="list-text">*用例*：選擇以下其中一個用例進行複製。根據所選的用例，Workload Factory 會根據最佳實踐在表單中填入建議值。您可以接受建議的數值，也可以在填寫表格時進行變更。</block>
@@ -691,10 +682,6 @@
   <block id="8917975c8444540f1ee9ac0cc5ca14cd" category="paragraph">在 Workload Factory 中從儲存為 FSx for ONTAP新增憑證時，您需要決定要授予哪些權限原則。若要發現 AWS 資源（例如 FSx for ONTAP檔案系統），您需要檢視、規劃和分析權限。若要為ONTAP檔案系統部署 FSx，您需要 _檔案系統建立和刪除_ 權限。無需權限即可對ONTAP上的 FSx 執行基本操作。<block ref="c61145cf60b5d306fe2b08006e1316ec" category="inline-link-macro-rx"></block>。</block>
   <block id="a7dccda0e2845707c7752e43c8ec99c4" category="inline-link-macro">了解權限</block>
   <block id="3accf22a176a1a0029ce245c84e87774" category="list-text">對於那些提供權限策略選擇的工作負載功能，請選擇使用這些憑證可取得的權限類型。<block ref="e5949275d6c97f4d8154c5ed72e8d3a9" category="inline-link-macro-rx"></block>。</block>
-  <block id="6f2324a9ef140c855ee143a6a8f3a97a" category="paragraph">複製資料以支援備份和災難復原。使用NetApp Replication可以實作 FSx for ONTAP檔案系統和Cloud Volumes ONTAP之間的資料複製。透過複製，您可以在ONTAP儲存系統之間複製數據，以支援到雲端或雲端之間的備份和災難復原。</block>
-  <block id="9a98b3cdae2120eee0c601730e2d0311" category="paragraph">在NetApp Console系統頁面上，可以實作兩個 FSx for ONTAP檔案系統之間以及本機ONTAP系統與 FSx for ONTAP檔案系統之間的資料複製。</block>
-  <block id="608f85440a5eadcbb4a9ce50bb7dda50" category="list-text">要在兩個 FSx for ONTAP檔案系統之間或在本機ONTAP系統和 FSx for ONTAP檔案系統之間複製數據，您必須選擇具有與檔案系統連接的控制台代理，或進入檔案系統以關聯連結。</block>
-  <block id="5f72153c430537b3e27deff7329da0d0" category="list-text">在NetApp Console系統頁面中，將來源 FSx for ONTAP檔案系統或本機ONTAP系統拖曳到目標 FSx for ONTAP檔案系統上，然後選擇「複製」。</block>
   <block id="1760c97f466ea374318a8c0bedcb2aff" category="section-title">2025年11月11日</block>
   <block id="1387404b18ce63590b24c55d54d3ff43" category="paragraph">在NetApp Console系統頁面上，可以在本機ONTAP系統和 FSx for ONTAP檔案系統之間進行資料複製。</block>
   <block id="f3bb71c095338a2af8e23c9ae07072bf" category="doc">使用 AWS Lambda 連結時，系統管理員可用。</block>
@@ -729,4 +716,30 @@
   <block id="4f1bd0ace83aba374b7ff69066a53c58" category="inline-xref">安全群組詳情</block>
   <block id="e41bac724f43b475f854e3aa1664b8de" category="paragraph">若要建立新的安全性群組，請參閱 <block ref="592b894db662c6a6a8229aea3f9a37fa" category="inline-xref-macro-rx"></block> 有關安全群組協定、連接埠和角色的描述。</block>
   <block id="0ebb1380b6abc3243f8c020aa97f25da" category="list-text">儲存或建立檔案系統。。結果</block>
+  <block id="e050f36de18bf9eec79dfa74451d3df0" category="doc">支援在 Cloud Volumes ONTAP 和 FSx for ONTAP 之間複寫資料</block>
+  <block id="7736ebd5eab336ae9e7647e31955b0cc" category="paragraph">現在可以透過 NetApp Console 在 Cloud Volumes ONTAP 系統和 FSx for ONTAP 檔案系統之間進行資料複製。</block>
+  <block id="f319ee95d93a22851e4a5522d2273836" category="paragraph"><block ref="f319ee95d93a22851e4a5522d2273836" category="inline-link-macro-rx"></block></block>
+  <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7019a39846e9a2c7f7a80eaba91e4a41" category="paragraph"><block ref="7019a39846e9a2c7f7a80eaba91e4a41" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1d593c3f7480ada9580d93cd753c3f93" category="paragraph">這是系統產生的與您的電子郵件地址對應的 ID。您可以在 *NSS Management* 頁面的 <block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block> 選單中找到您的電子郵件地址。</block>
+  <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">如果您需要刷新登入憑證令牌，<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block> 選單中還有一個「更新憑證」選項。</block>
+  <block id="e637038fd567011a59fd1e7148bf1b4f" category="paragraph">當您從 NetApp Console Systems 頁面開啟 FSx for ONTAP 系統時，您將進入 NetApp Workloads。Workloads 是一項智慧優化和自動化服務，它採用業界最佳實踐來規劃、配置和運行使用 Amazon FSx for NetApp ONTAP 的關鍵工作負載。</block>
+  <block id="255ed45341071970ff67a5a94aa268d9" category="doc">在 NetApp Console 中複製 FSx for ONTAP 資料</block>
+  <block id="a374db47ec4f6c8b0b47234eb4f19712" category="paragraph">如果資料所在區域發生災難，請複製資料以防止資料遺失。FSx for ONTAP 檔案系統與內部部署 ONTAP 系統或 Cloud Volumes ONTAP 之間支援資料複寫。</block>
+  <block id="e481f3e818c1bf548144dff8b6c46360" category="paragraph">此操作為 FSx for ONTAP 檔案系統、內部部署 ONTAP 系統或 Cloud Volumes ONTAP 系統中的來源磁碟區建立複寫關係。</block>
+  <block id="99f375ee1d56d1983309c071fe9cb69a" category="paragraph">目標檔案系統中的複製磁碟區是資料保護（DP）磁碟區，並遵循命名格式：<block ref="4b5beb37da0fa6444b7f9f92238aadb1" prefix=" " category="inline-code"></block>。</block>
+  <block id="329f7e1b4e95f05da5f05e33ca7af05a" category="list-text">要在 FSx for ONTAP 與內部部署 ONTAP 或 Cloud Volumes ONTAP 之間複寫資料，您必須選擇一個與檔案系統有連線的 Console 代理程式，或進入檔案系統以關聯連結。<block ref="61b7909f43b8222037001004e52dc71c" category="inline-link-macro-rx"></block></block>
+  <block id="66de39f46af06b661b7bce68c01c8e61" category="list-text">對於處於可用、已建立或配置錯誤以外狀態的磁碟區，以及 ONTAP 版本不相容時，不支援複寫。</block>
+  <block id="96ba6e4ef9df4a236ca029bbe4504ef8" category="list-text">從 NetApp Console 系統頁面，將來源 FSx for ONTAP 檔案系統、內部部署 ONTAP 系統或 Cloud Volumes ONTAP 系統拖曳到目標 FSx for ONTAP 檔案系統上方，然後選取 *Replication* 。</block>
+  <block id="af523b162a02562eeefa105871379e55" category="list-text">*目標名稱*：您在 Console Systems 頁面中將來源儲存系統拖曳到目標系統時套用了目標名稱。</block>
+  <block id="837278414ab16e2a74dfc1b2102bcd54" category="list-text">*FSx for ONTAP 檔案系統*：選擇目標 FSx for ONTAP 檔案系統的憑證、區域和 FSx for ONTAP 檔案系統名稱。</block>
+  <block id="33d481ba528452e02faf75a2f7350ee4" category="list-text">*S3 存取點*：您可以選擇性地附加一個 S3 存取點，以便透過 AWS S3 API 存取駐留在 NFS 或 SMB/CIFS 磁碟區上的 FSx for ONTAP 檔案系統資料。僅支援檔案存取類型。提供以下詳細資訊：</block>
+  <block id="41706ab07c21315a8c38172f78132df3" category="list-text">*S3 存取點名稱*：輸入 S3 存取點的名稱。</block>
+  <block id="49abb21c910ce41b88d46bbe2dbec336" category="list-text">*User*：選擇具有磁碟區存取權限的現有使用者或建立新使用者。</block>
+  <block id="ce5abe58cc3ff0993fa9e0b2c6ad1340" category="list-text">*使用者類型*：選取 *UNIX* 或 *Windows* 作為使用者類型。</block>
+  <block id="acbb57d15a35fb35e9bb5b030da0d855" category="list-text">*網路組態*：選擇 *Internet* 或 *Virtual private cloud (VPC)*。您選擇的網路類型決定了存取點是可從網際網路存取，還是僅限於特定的 VPC。</block>
+  <block id="6c7b2c1264a7189632e27a922b67c8b7" category="inline-link-macro">Amazon S3 定價文件</block>
+  <block id="caabcc888415814c29639d089816b5fa" category="list-text">*啟用元資料*：啟用元資料會建立一個 S3 表，其中包含 S3 存取點可存取的所有物件，您可以將其用於稽核、治理、自動化、分析和最佳化。啟用元資料會產生額外的 AWS 費用。請參閱 <block ref="af9c8757ba81fcc825b028513d05dce7" category="inline-link-macro-rx"></block> 以了解更多資訊。</block>
+  <block id="56573dfcf7d1ac3cf78f2423725ccce8" category="list-text">*S3 存取點標籤*：您可以選擇新增最多 50 個標籤。</block>
+  <block id="c9d872b23d54864ab58551a55106a3db" category="section-title">2026 年 2 月 09 日</block>
 </blocks>

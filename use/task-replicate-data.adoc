@@ -1,0 +1,114 @@
+---
+sidebar: sidebar 
+permalink: use/task-replicate-data.html 
+keywords: amazon fsx for netapp ontap, fsx, manage fsx for ontap system, delete fsx for ontap system, remove fsx for ontap system, throughput capacity, change throughput, automatic capacity management, capacity management, storage capacity, replication, classification, sync, backup, recovery, bluexp, NetApp Console 
+summary: 在NetApp Console中建立或發現 FSx for ONTAP系統後，您可以管理檔案系統並使用提供備份和復原等功能的NetApp資料服務。 
+---
+= 在 NetApp Console 中複製 FSx for ONTAP 資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果資料所在區域發生災難，請複製資料以防止資料遺失。FSx for ONTAP 檔案系統與內部部署 ONTAP 系統或 Cloud Volumes ONTAP 之間支援資料複寫。
+
+.關於此任務
+此操作為 FSx for ONTAP 檔案系統、內部部署 ONTAP 系統或 Cloud Volumes ONTAP 系統中的來源磁碟區建立複寫關係。
+
+目標檔案系統中的複製磁碟區是資料保護（DP）磁碟區，並遵循命名格式： `{OriginalVolumeName}_copy`。
+
+.開始之前
+在開始之前請考慮以下事項。
+
+* 要在 FSx for ONTAP 與內部部署 ONTAP 或 Cloud Volumes ONTAP 之間複寫資料，您必須選擇一個與檔案系統有連線的 Console 代理程式，或進入檔案系統以關聯連結。link:https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["了解如何使用連結"^]
+* 對於處於可用、已建立或配置錯誤以外狀態的磁碟區，以及 ONTAP 版本不相容時，不支援複寫。
+
+
+.步驟
+. 從 NetApp Console 系統頁面，將來源 FSx for ONTAP 檔案系統、內部部署 ONTAP 系統或 Cloud Volumes ONTAP 系統拖曳到目標 FSx for ONTAP 檔案系統上方，然後選取 *Replication* 。
+. 在「建立複製」頁面上，選擇要複製的來源卷，然後按一下「下一步」。
+. 在複製目標下，提供以下內容：
++
+.. *目標名稱*：您在 Console Systems 頁面中將來源儲存系統拖曳到目標系統時套用了目標名稱。
+.. *用例*：選擇以下其中一個用例進行複製。根據所選的用例，Workload Factory 會根據最佳實踐在表單中填入建議值。您可以接受建議的數值，也可以在填寫表格時進行變更。
++
+*** 遷移：將您的資料傳輸到目標 FSx for ONTAP檔案系統
+*** 熱災難復原：確保關鍵工作負載的高可用性和快速災難復原
+*** 冷災復原或存檔災難復原：
++
+**** 冷災難復原：使用更長的復原時間目標（RTO）和復原點物件（RPO）來降低成本
+**** 存檔：複製資料以實現長期儲存和合規性
+
+
+*** 其他
++
+此外，用例選擇決定了複製策略或SnapMirror策略（ONTAP）。用於描述複製策略的術語來自link:https://docs.netapp.com/us-en/ontap/data-protection/default-protection-policies-concept.html["ONTAP 9 文件"^]。
+
++
+**** 對於遷移和其他，複製策略稱為_MirrorAllSnapshots_。  _MirrorAllSnapshots_ 是一種非同步策略，用於鏡像所有快照和最新的活動檔案系統。
+**** 對於熱、冷或存檔災難恢復，複製策略稱為_MirrorAndVault_。  _MirrorAndVault_ 是一種非同步和保險庫策略，用於鏡像最新的活動檔案系統以及每日和每週快照。
++
+對於所有用例，如果您啟用快照進行長期保留，則預設複製策略為_MirrorAndVault_。
+
+
+
+
+
+.. *FSx for ONTAP 檔案系統*：選擇目標 FSx for ONTAP 檔案系統的憑證、區域和 FSx for ONTAP 檔案系統名稱。
+.. *儲存虛擬機器名稱*：從下拉式選單中選擇儲存虛擬機器。您選擇的儲存虛擬機器是此複製關係中所有選定磁碟區的目標。
+.. *磁碟區名稱*：目標磁碟區名稱自動生成，格式如下 `{OriginalVolumeName}_copy`。您可以使用自動產生的磁碟區名稱或輸入其他磁碟區名稱。
+.. *分層策略*：選擇目標磁碟區中儲存的資料的分層策略。分層策略預設為您選擇的用例的建議分層策略。
++
+使用 Workload Factory 控制台建立磁碟區時，_平衡（自動）_ 是預設分層策略。有關卷分層策略的更多信息，請參閱link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["卷儲存容量"^]在 AWS FSx for NetApp ONTAP文件中。請注意，工作負載工廠在工作負載工廠控制台中使用基於用例的名稱來制定分層策略，並在括號中包含 FSx for ONTAP分層策略名稱。
+
++
+如果您選擇了遷移案例，Workload Factory 會自動選擇將來源磁碟區的分層策略複製到目標磁碟區。您可以取消選擇複製分層策略並選擇適用於選擇進行複製的磁碟區的分層策略。
+
+.. *最大傳輸速率*：選擇*限制*並輸入最大傳輸限制（MB/s）。或者，選擇*無限制*。
++
+如果沒有限制，網路和應用程式效能可能會下降。或者，我們建議對於關鍵工作負載（例如主要用於災難復原的工作負載）使用 FSx for ONTAP檔案系統的無限傳輸速率。
+
+
+
+. 在複製設定下，提供以下內容：
++
+.. *複製間隔*：選擇快照從來源磁碟區傳送到目標磁碟區的頻率。
+.. *長期保留*：可選地，啟用快照以進行長期保留。長期保留使業務服務即使在整個站點發生故障時也能繼續運行，支援應用程式使用輔助副本透明地進行故障轉移。
++
+沒有長期保留的複製使用_MirrorAllSnapshots_策略。啟用長期保留會將 _MirrorAndVault_ 策略指派給複製。
+
++
+如果啟用長期保留，則選擇現有策略或建立新策略來定義要複製的快照和要保留的數量。
+
++
+
+NOTE: 長期保留需要匹配的來源標籤和目標標籤。如果需要，工作負載工廠可以為您建立缺少的標籤。
+
++
+*** *選擇現有策略*：從下拉式選單中選擇一個現有策略。
+*** *建立新策略*：輸入*策略名稱*。
+
+
+.. *不可變快照*：可選。選擇「啟用不可變快照」以防止在保留期間內刪除此策略中拍攝的快照。
++
+*** 以小時、天、月或年設定*保留期*。
+*** *快照策略*：在表格中，選擇快照策略頻率和要保留的副本數。您可以選擇多個快照策略。
+
+
+.. *S3 存取點*：您可以選擇性地附加一個 S3 存取點，以便透過 AWS S3 API 存取駐留在 NFS 或 SMB/CIFS 磁碟區上的 FSx for ONTAP 檔案系統資料。僅支援檔案存取類型。提供以下詳細資訊：
++
+*** *S3 存取點名稱*：輸入 S3 存取點的名稱。
+*** *User*：選擇具有磁碟區存取權限的現有使用者或建立新使用者。
+*** *使用者類型*：選取 *UNIX* 或 *Windows* 作為使用者類型。
+*** *網路組態*：選擇 *Internet* 或 *Virtual private cloud (VPC)*。您選擇的網路類型決定了存取點是可從網際網路存取，還是僅限於特定的 VPC。
+*** *啟用元資料*：啟用元資料會建立一個 S3 表，其中包含 S3 存取點可存取的所有物件，您可以將其用於稽核、治理、自動化、分析和最佳化。啟用元資料會產生額外的 AWS 費用。請參閱 link:https://aws.amazon.com/s3/pricing/["Amazon S3 定價文件"^] 以了解更多資訊。
+
+
+.. *S3 存取點標籤*：您可以選擇新增最多 50 個標籤。
+
+
+
+
+. 選擇“*創建*”。
+

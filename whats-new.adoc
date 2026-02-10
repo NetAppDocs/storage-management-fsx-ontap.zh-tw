@@ -18,6 +18,18 @@ summary: 了解Amazon FSx for NetApp ONTAP中的新功能。
 
 
 
+== 2026 年 2 月 09 日
+
+
+
+=== 支援在 Cloud Volumes ONTAP 和 FSx for ONTAP 之間複寫資料
+
+現在可以透過 NetApp Console 在 Cloud Volumes ONTAP 系統和 FSx for ONTAP 檔案系統之間進行資料複製。
+
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-replicate-data.html["複製數據"]
+
+
+
 == 2025年11月17日
 
 
