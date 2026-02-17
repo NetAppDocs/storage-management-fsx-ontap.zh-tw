@@ -483,7 +483,6 @@
   <block id="4445ca9504f7ce2f198006088a6a0db6" category="paragraph">NetApp Data Classification可讓您掃描和分類組織混合多雲中的資料。</block>
   <block id="9d79f74e1dd8a7371bdf2a808029dff7" category="inline-link-macro">開始使用NetApp Data Classification</block>
   <block id="ce269f36061333cca0642955f85d7893" category="paragraph"><block ref="ce269f36061333cca0642955f85d7893" category="inline-link-macro-rx"></block></block>
-  <block id="513c180c5d2a9ee1b68bcde16bb98445" category="paragraph">在開始之前請考慮以下事項。</block>
   <block id="9793db8d97a651febf9f052b60487a84" category="list-text">在「建立複製」頁面上，選擇要複製的來源卷，然後按一下「下一步」。</block>
   <block id="5bc67df36eab9c2f7b3c55d3f683100e" category="list-text">在複製目標下，提供以下內容：</block>
   <block id="562c87a680d962135f8e44bc0d159259" category="list-text">*儲存虛擬機器名稱*：從下拉式選單中選擇儲存虛擬機器。您選擇的儲存虛擬機器是此複製關係中所有選定磁碟區的目標。</block>
@@ -724,11 +723,8 @@
   <block id="1d593c3f7480ada9580d93cd753c3f93" category="paragraph">這是系統產生的與您的電子郵件地址對應的 ID。您可以在 *NSS Management* 頁面的 <block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block> 選單中找到您的電子郵件地址。</block>
   <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">如果您需要刷新登入憑證令牌，<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block> 選單中還有一個「更新憑證」選項。</block>
   <block id="e637038fd567011a59fd1e7148bf1b4f" category="paragraph">當您從 NetApp Console Systems 頁面開啟 FSx for ONTAP 系統時，您將進入 NetApp Workloads。Workloads 是一項智慧優化和自動化服務，它採用業界最佳實踐來規劃、配置和運行使用 Amazon FSx for NetApp ONTAP 的關鍵工作負載。</block>
-  <block id="255ed45341071970ff67a5a94aa268d9" category="doc">在 NetApp Console 中複製 FSx for ONTAP 資料</block>
   <block id="a374db47ec4f6c8b0b47234eb4f19712" category="paragraph">如果資料所在區域發生災難，請複製資料以防止資料遺失。FSx for ONTAP 檔案系統與內部部署 ONTAP 系統或 Cloud Volumes ONTAP 之間支援資料複寫。</block>
-  <block id="e481f3e818c1bf548144dff8b6c46360" category="paragraph">此操作為 FSx for ONTAP 檔案系統、內部部署 ONTAP 系統或 Cloud Volumes ONTAP 系統中的來源磁碟區建立複寫關係。</block>
   <block id="99f375ee1d56d1983309c071fe9cb69a" category="paragraph">目標檔案系統中的複製磁碟區是資料保護（DP）磁碟區，並遵循命名格式：<block ref="4b5beb37da0fa6444b7f9f92238aadb1" prefix=" " category="inline-code"></block>。</block>
-  <block id="329f7e1b4e95f05da5f05e33ca7af05a" category="list-text">要在 FSx for ONTAP 與內部部署 ONTAP 或 Cloud Volumes ONTAP 之間複寫資料，您必須選擇一個與檔案系統有連線的 Console 代理程式，或進入檔案系統以關聯連結。<block ref="61b7909f43b8222037001004e52dc71c" category="inline-link-macro-rx"></block></block>
   <block id="66de39f46af06b661b7bce68c01c8e61" category="list-text">對於處於可用、已建立或配置錯誤以外狀態的磁碟區，以及 ONTAP 版本不相容時，不支援複寫。</block>
   <block id="96ba6e4ef9df4a236ca029bbe4504ef8" category="list-text">從 NetApp Console 系統頁面，將來源 FSx for ONTAP 檔案系統、內部部署 ONTAP 系統或 Cloud Volumes ONTAP 系統拖曳到目標 FSx for ONTAP 檔案系統上方，然後選取 *Replication* 。</block>
   <block id="af523b162a02562eeefa105871379e55" category="list-text">*目標名稱*：您在 Console Systems 頁面中將來源儲存系統拖曳到目標系統時套用了目標名稱。</block>
@@ -742,4 +738,58 @@
   <block id="caabcc888415814c29639d089816b5fa" category="list-text">*啟用元資料*：啟用元資料會建立一個 S3 表，其中包含 S3 存取點可存取的所有物件，您可以將其用於稽核、治理、自動化、分析和最佳化。啟用元資料會產生額外的 AWS 費用。請參閱 <block ref="af9c8757ba81fcc825b028513d05dce7" category="inline-link-macro-rx"></block> 以了解更多資訊。</block>
   <block id="56573dfcf7d1ac3cf78f2423725ccce8" category="list-text">*S3 存取點標籤*：您可以選擇新增最多 50 個標籤。</block>
   <block id="c9d872b23d54864ab58551a55106a3db" category="section-title">2026 年 2 月 09 日</block>
+  <block id="5d8caeaede63e2cdba6715a163d09892" category="doc">支援儲存 VM 移轉</block>
+  <block id="353d7ff4a3d58ad1fe8ef0ad6acab574" category="paragraph">NetApp Workload Factory 現已支援儲存虛擬機器遷移。此功能允許將 ONTAP 儲存系統資料和配置從本機 ONTAP 系統或第一代 FSx for ONTAP 檔案系統遷移到第二代 FSx for ONTAP 檔案系統。您可以複製儲存虛擬機器的資料和配置設置，以最小的停機時間和對使用者及應用程式的干擾遷移到新的檔案系統。</block>
+  <block id="fb2a77c6756f10fcc139a51a83349d7f" category="inline-link-macro">建立複寫關係</block>
+  <block id="33039f37667143e740ae3514cd2b2eea" category="inline-link-macro">切換儲存 VM 及其複寫磁碟區</block>
+  <block id="e6dbc21f7dea944e6aaaaa4c0d56159d" category="paragraph">若要使用此功能，<block ref="a00423c4266b8832da7ddbc75235d0cb" category="inline-link-macro-rx"></block>並選擇 *Migration* 作為使用案例。若要完成遷移過程，您必須<block ref="4fbf2906eb98c7c630a3491ffc2b8863" category="inline-link-macro-rx"></block>立即將資料和儲存 VM 組態設定永久遷移到目標 FSx for ONTAP 檔案系統。</block>
+  <block id="a26acefb7c797c670c1c39de1408d5d6" category="doc">在 NetApp Console 中將資料複製到 FSx for ONTAP</block>
+  <block id="f009487bcbb1861316ff956fce5c3ac3" category="paragraph">對於儲存 VM 遷移，您必須在建立複寫關係後立即完成切換作業。</block>
+  <block id="1b8db2e8955b459973ea9bfe988b7384" category="paragraph">複製功能可保護您的資料免受區域災難的影響，並支援儲存 VM 遷移。</block>
+  <block id="38adbad92c37166c4ce64da1eb51513b" category="inline-link-macro">建立磁碟區</block>
+  <block id="0d2b6b8037148b2d54a1cf8b887418e7" category="paragraph">如果複製的來源磁碟區包含不可變檔案，則目標磁碟區和檔案系統將保持鎖定狀態，直到來源磁碟區的保留期結束。當您<block ref="88d66b8875f0ded07f2f44fb2e4b70e3" category="inline-link-macro-rx"></block> FSx for ONTAP 檔案系統時，不可變檔案功能可用。</block>
+  <block id="30965461c316b499ed01c7f92f651051" category="list-text">使用 iSCSI 或 NVMe 通訊協定的區塊磁碟區不支援複寫。</block>
+  <block id="db02b80a9dd5a7c959ec87fdf41baa91" category="inline-link-macro">級聯複寫</block>
+  <block id="cb7048e2d3bbe74eff8dc77537e6b3cb" category="list-text">您可以複製一個來源（讀 / 寫）磁碟區或一個資料保護（DP）磁碟區。支援級聯複製，但不支援第三跳。深入瞭解 <block ref="70f3f574eb9d2048e3113fc3bf26173a" category="inline-link-macro-rx"></block>。</block>
+  <block id="ed5b7e4aa04c57efe98d70f7ef15379d" category="section-title">遷移使用案例</block>
+  <block id="943bab906fe3e90d4f3eb004f330f122" category="paragraph">選擇遷移使用案例時，您可以選擇複製單一 storage VM 的 storage VM 資料和組態設定。同時移轉資料和組態設定時，請確保磁碟區的最後一次複寫已在過去 24 小時內完成。必須選取同一個 storage VM 中的所有磁碟區才能使用此功能。所有磁碟區的分層原則預設為來源磁碟區的分層原則，建議用於移轉使用案例。</block>
+  <block id="1666b76635bd7b8ba7032286416076a1" category="paragraph">Workload Factory 支援以下儲存系統之間的移轉複寫。</block>
+  <block id="c9bc20a670a5e3835c0109ab8efaf03d" category="list-text">內部部署 ONTAP 系統和 FSx for ONTAP 檔案系統</block>
+  <block id="355385ffc49e40e0caaabbd4b1ef6737" category="list-text">Cloud Volumes ONTAP 和 FSx for ONTAP 檔案系統</block>
+  <block id="507884c25618fc114f4becd877e50dd8" category="list-text">FSx for ONTAP 和 FSx for ONTAP 檔案系統</block>
+  <block id="811a8960cadc3b9f9379096dc8b6b831" category="list-text">第一代到第一代</block>
+  <block id="023f8d09179a05ce990eeb5697e1ecd6" category="list-text">第一代到第二代</block>
+  <block id="9b03bdd83a5017b3aa998f32e7ad219f" category="list-text">第二代至第二代</block>
+  <block id="04e64253a4742b9534714d0147f467f6" category="paragraph">若要遷移儲存 VM 資料和組態設定，您必須完成兩項作業。</block>
+  <block id="ca0c3dd7dca9f636af3209d526098e1e" category="inline-xref">建立複寫關係</block>
+  <block id="59835e5fb082d065015e2824a515a5b7" category="list-text"><block ref="75331dd4d9fa346165fac294e4e498ee" category="inline-xref-macro-rx"></block>，選擇 *Migration* 作為使用案例，然後選擇 *Replicate storage VM configuration*。</block>
+  <block id="db529797694203560d43ab415a6dd52d" category="inline-xref">切換複寫</block>
+  <block id="4ff5e77c5ed7650b96676675b9d3eb18" category="list-text"><block ref="76a1fb9977d9fe48f9a1edf04990b3a3" category="inline-xref-macro-rx"></block> 將資料和組態設定從來源檔案系統永久遷移到目標 FSx for ONTAP 檔案系統。</block>
+  <block id="c7e68f063ccf0d86162e4964cc1abdf0" category="paragraph">若要使用此功能，請建立</block>
+  <block id="388c14942d26a5119b21a74fab9025a3" category="paragraph">在兩個 FSx for ONTAP 檔案系統之間、內部部署 ONTAP 系統和 FSx for ONTAP 檔案系統之間，或在 Cloud Volumes ONTAP 和 FSx for ONTAP 檔案系統之間複寫資料。</block>
+  <block id="0aa7d11dc16260c47faf9d5b0b642366" category="paragraph">開始之前、請先檢閱這些需求。</block>
+  <block id="be8334e3a8f0885af8e03ba816b24537" category="inline-link-macro">了解如何關聯現有連結或建立並關聯新連結</block>
+  <block id="b3b30d7a6ed8c780ecba9bd7ce8c2400" category="list-text">若要在 FSx for ONTAP 與本地端 ONTAP 或 Cloud Volumes ONTAP 之間複寫資料，您必須將連結關聯至檔案系統。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>。關聯連結後，請返回此操作。</block>
+  <block id="ba1072e8c0845f82f77ef660d46bde4a" category="list-text">若要從內部部署 ONTAP 系統複寫到 FSx for ONTAP 檔案系統，請確保您已探索內部部署 ONTAP 系統。</block>
+  <block id="cbcff6555c8b07eb6add33653d3ab030" category="list-text">對於遷移使用案例，請確保在使用儲存 VM 資料和組態設定建立複寫關係之前，磁碟區的最後一次複寫已在過去 24 小時內完成。</block>
+  <block id="876ae080bad2795906c16db5a7bfc488" category="paragraph">*複製儲存 VM 組態*：您可以選擇複製單一儲存 VM 的資料和組態設定。同時移轉資料和組態設定時、請確保磁碟區的最後一次複寫已在過去 24 小時內完成。必須選取同一個儲存 VM 中的所有磁碟區、才能使用此功能。所有磁碟區的分層原則預設為來源磁碟區的分層原則、建議用於移轉使用案例。</block>
+  <block id="5ef8b0a1c66a4b2210971848d2ce9752" category="paragraph">複寫關係會顯示在目標 FSx for ONTAP 檔案系統的 *複寫關係* 索引標籤中。</block>
+  <block id="41ad46bbff5ae50ffe14d0bdc1b66775" category="paragraph">如果您為了遷移目的建立了複製關係，則必須切換所有磁碟區及其關聯的儲存 VM，才能完成將儲存 VM 資料和組態設定遷移到目標 FSx for ONTAP 檔案系統。</block>
+  <block id="f2ce5ba0f770aa8ae822f79404813d99" category="section-title">切換複寫以適應移轉使用案例</block>
+  <block id="794cfa9c47742057e71b100968214bfd" category="paragraph">為遷移用例建立複製關係後，您必須執行切換複製，才能將儲存 VM 資料和組態設定遷移到目標 FSx for ONTAP 檔案系統。切換複製會將資料和儲存 VM 組態設定從來源檔案系統永久遷移到目標 FSx for ONTAP 檔案系統。切換期間，資料將進行最後一次複製。切換完成後，系統將刪除來源磁碟區。此操作無法復原。</block>
+  <block id="aed0e194718db8e0128d88b14756819e" category="list-text">在切換複寫之前，請停止所有用戶端對儲存 VM 的存取。</block>
+  <block id="782b2627ed10262abe4e368b33d508dc" category="list-text">在切換複寫之前，請確保所有來源磁碟區均未承載任何資料。</block>
+  <block id="dda7c50cacac64812ef938f4d803c3a5" category="list-text">在切換複製之前、請確保來源磁碟區和目標磁碟區之間的資料已同步。</block>
+  <block id="66aa1d91f89810f078327deb1e1fc2c8" category="list-text">您用於複寫關係的 FSx for ONTAP 檔案系統必須具備相關聯的連結。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>。關聯連結後，請返回此操作。</block>
+  <block id="342a19841e494c61bf9c06a5879eaffa" category="inline-image-macro">漢堡選單圖示用於導覽至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。</block>
+  <block id="632b6c618f57f392aa00db7fb78d681a" category="list-text">在 NetApp Console 中，選擇選單 <block ref="d1917ed039a7bd34b3d1373e5ffc5ece" category="inline-image-macro-rx" type="image"></block>，然後選擇 *Storage*。</block>
+  <block id="c9183e42d9edf5bc557a95d0fcd830f8" category="list-text">從儲存選單中選擇 *FSx for ONTAP* 。</block>
+  <block id="292198e01fad7795066f40b6fec350fd" category="list-text">從 *FSx for ONTAP* 中、選取包含要複寫之磁碟區的檔案系統。</block>
+  <block id="bc9c958c3279391522e702151359608b" category="list-text">選擇 *Replication relationships* 標籤。</block>
+  <block id="23c1b911bea8dc9e9cdd65d07a7745ca" category="list-text">在複製關係表中、選取要切換的複製關係、然後選取 *Cut over replication* 。</block>
+  <block id="e4d846e7cde6ab6686b9817d81bc55f6" category="list-text">查看「切換複製」對話方塊中的資訊，然後輸入 _cut over_ 進行確認。</block>
+  <block id="882f34227a47a95827c88036c610642f" category="list-text">選擇 *Cut over* 。</block>
+  <block id="7b626244b5e77ec8426207a79760602c" category="inline-link-macro">修改分層原則</block>
+  <block id="cdefdf2807f30b87eddcd4e17418772a" category="paragraph">切換完成後，來源磁碟區將被刪除，目標磁碟區將變為讀 / 寫狀態。您可以在切換完成後<block ref="16bce6d1c351d0b9dcc239287b000317" category="inline-link-macro-rx"></block>目標磁碟區。</block>
+  <block id="fb042b7b99959e391eeb7c417511098a" category="section-title">2026 年 2 月 16 日</block>
 </blocks>
