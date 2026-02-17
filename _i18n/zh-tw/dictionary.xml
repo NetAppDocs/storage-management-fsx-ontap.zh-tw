@@ -742,7 +742,6 @@
   <block id="353d7ff4a3d58ad1fe8ef0ad6acab574" category="paragraph">NetApp Workload Factory 現已支援儲存虛擬機器遷移。此功能允許將 ONTAP 儲存系統資料和配置從本機 ONTAP 系統或第一代 FSx for ONTAP 檔案系統遷移到第二代 FSx for ONTAP 檔案系統。您可以複製儲存虛擬機器的資料和配置設置，以最小的停機時間和對使用者及應用程式的干擾遷移到新的檔案系統。</block>
   <block id="fb2a77c6756f10fcc139a51a83349d7f" category="inline-link-macro">建立複寫關係</block>
   <block id="33039f37667143e740ae3514cd2b2eea" category="inline-link-macro">切換儲存 VM 及其複寫磁碟區</block>
-  <block id="e6dbc21f7dea944e6aaaaa4c0d56159d" category="paragraph">若要使用此功能，<block ref="a00423c4266b8832da7ddbc75235d0cb" category="inline-link-macro-rx"></block>並選擇 *Migration* 作為使用案例。若要完成遷移過程，您必須<block ref="4fbf2906eb98c7c630a3491ffc2b8863" category="inline-link-macro-rx"></block>立即將資料和儲存 VM 組態設定永久遷移到目標 FSx for ONTAP 檔案系統。</block>
   <block id="a26acefb7c797c670c1c39de1408d5d6" category="doc">在 NetApp Console 中將資料複製到 FSx for ONTAP</block>
   <block id="f009487bcbb1861316ff956fce5c3ac3" category="paragraph">對於儲存 VM 遷移，您必須在建立複寫關係後立即完成切換作業。</block>
   <block id="1b8db2e8955b459973ea9bfe988b7384" category="paragraph">複製功能可保護您的資料免受區域災難的影響，並支援儲存 VM 遷移。</block>
@@ -763,8 +762,6 @@
   <block id="04e64253a4742b9534714d0147f467f6" category="paragraph">若要遷移儲存 VM 資料和組態設定，您必須完成兩項作業。</block>
   <block id="ca0c3dd7dca9f636af3209d526098e1e" category="inline-xref">建立複寫關係</block>
   <block id="59835e5fb082d065015e2824a515a5b7" category="list-text"><block ref="75331dd4d9fa346165fac294e4e498ee" category="inline-xref-macro-rx"></block>，選擇 *Migration* 作為使用案例，然後選擇 *Replicate storage VM configuration*。</block>
-  <block id="db529797694203560d43ab415a6dd52d" category="inline-xref">切換複寫</block>
-  <block id="4ff5e77c5ed7650b96676675b9d3eb18" category="list-text"><block ref="76a1fb9977d9fe48f9a1edf04990b3a3" category="inline-xref-macro-rx"></block> 將資料和組態設定從來源檔案系統永久遷移到目標 FSx for ONTAP 檔案系統。</block>
   <block id="c7e68f063ccf0d86162e4964cc1abdf0" category="paragraph">若要使用此功能，請建立</block>
   <block id="388c14942d26a5119b21a74fab9025a3" category="paragraph">在兩個 FSx for ONTAP 檔案系統之間、內部部署 ONTAP 系統和 FSx for ONTAP 檔案系統之間，或在 Cloud Volumes ONTAP 和 FSx for ONTAP 檔案系統之間複寫資料。</block>
   <block id="0aa7d11dc16260c47faf9d5b0b642366" category="paragraph">開始之前、請先檢閱這些需求。</block>
@@ -792,4 +789,6 @@
   <block id="7b626244b5e77ec8426207a79760602c" category="inline-link-macro">修改分層原則</block>
   <block id="cdefdf2807f30b87eddcd4e17418772a" category="paragraph">切換完成後，來源磁碟區將被刪除，目標磁碟區將變為讀 / 寫狀態。您可以在切換完成後<block ref="16bce6d1c351d0b9dcc239287b000317" category="inline-link-macro-rx"></block>目標磁碟區。</block>
   <block id="fb042b7b99959e391eeb7c417511098a" category="section-title">2026 年 2 月 16 日</block>
+  <block id="498aaff0cc400a96455ebb5b21ae7ffa" category="paragraph">若要使用此功能，<block ref="a00423c4266b8832da7ddbc75235d0cb" category="inline-link-macro-rx"></block>並選擇 *Migration* 作為使用案例。若要完成遷移過程，您必須<block ref="26b59663dcf673cfcdf7f1e6b23597f9" category="inline-link-macro-rx"></block>立即將資料和儲存 VM 組態設定永久遷移到目標 FSx for ONTAP 檔案系統。</block>
+  <block id="df319eebb5e9e4cde194e1e976bf0795" category="list-text"><block ref="7a9cdee14fa6d629f0d48ed18525f6a5" category="inline-xref-macro-rx"></block> 將資料和組態設定從來源檔案系統永久遷移到目標 FSx for ONTAP 檔案系統。</block>
 </blocks>
