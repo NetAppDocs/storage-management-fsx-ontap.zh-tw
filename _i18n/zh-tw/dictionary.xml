@@ -735,7 +735,6 @@
   <block id="ce5abe58cc3ff0993fa9e0b2c6ad1340" category="list-text">*使用者類型*：選取 *UNIX* 或 *Windows* 作為使用者類型。</block>
   <block id="acbb57d15a35fb35e9bb5b030da0d855" category="list-text">*網路組態*：選擇 *Internet* 或 *Virtual private cloud (VPC)*。您選擇的網路類型決定了存取點是可從網際網路存取，還是僅限於特定的 VPC。</block>
   <block id="6c7b2c1264a7189632e27a922b67c8b7" category="inline-link-macro">Amazon S3 定價文件</block>
-  <block id="caabcc888415814c29639d089816b5fa" category="list-text">*啟用元資料*：啟用元資料會建立一個 S3 表，其中包含 S3 存取點可存取的所有物件，您可以將其用於稽核、治理、自動化、分析和最佳化。啟用元資料會產生額外的 AWS 費用。請參閱 <block ref="af9c8757ba81fcc825b028513d05dce7" category="inline-link-macro-rx"></block> 以了解更多資訊。</block>
   <block id="56573dfcf7d1ac3cf78f2423725ccce8" category="list-text">*S3 存取點標籤*：您可以選擇新增最多 50 個標籤。</block>
   <block id="c9d872b23d54864ab58551a55106a3db" category="section-title">2026 年 2 月 09 日</block>
   <block id="5d8caeaede63e2cdba6715a163d09892" category="doc">支援儲存 VM 移轉</block>
@@ -762,7 +761,6 @@
   <block id="04e64253a4742b9534714d0147f467f6" category="paragraph">若要遷移儲存 VM 資料和組態設定，您必須完成兩項作業。</block>
   <block id="ca0c3dd7dca9f636af3209d526098e1e" category="inline-xref">建立複寫關係</block>
   <block id="59835e5fb082d065015e2824a515a5b7" category="list-text"><block ref="75331dd4d9fa346165fac294e4e498ee" category="inline-xref-macro-rx"></block>，選擇 *Migration* 作為使用案例，然後選擇 *Replicate storage VM configuration*。</block>
-  <block id="c7e68f063ccf0d86162e4964cc1abdf0" category="paragraph">若要使用此功能，請建立</block>
   <block id="388c14942d26a5119b21a74fab9025a3" category="paragraph">在兩個 FSx for ONTAP 檔案系統之間、內部部署 ONTAP 系統和 FSx for ONTAP 檔案系統之間，或在 Cloud Volumes ONTAP 和 FSx for ONTAP 檔案系統之間複寫資料。</block>
   <block id="0aa7d11dc16260c47faf9d5b0b642366" category="paragraph">開始之前、請先檢閱這些需求。</block>
   <block id="be8334e3a8f0885af8e03ba816b24537" category="inline-link-macro">了解如何關聯現有連結或建立並關聯新連結</block>
@@ -794,4 +792,6 @@
   <block id="3acecbd4317d789f549785c17e6afb2c" category="doc">FSx for ONTAP 檔案系統支援 NetApp Console 代理程式狀態</block>
   <block id="5088f4e07e6650891b34cd38ec19877b" category="paragraph">NetApp Console 現在會顯示 Workloads 中 FSx for ONTAP 檔案系統的 Console 代理程式狀態。此狀態指示代理程式是否正在執行以及是否能夠與 FSx for ONTAP 檔案系統通訊。此資訊有助於您疑難排解連線問題。</block>
   <block id="4aa1f4ce7ff97e69b143fbe399631234" category="section-title">2026 年 3 月 1 日</block>
+  <block id="3d8f5698e4ea8cae76ec64ff32d1aa8a" category="list-text">人工智慧（AI）和機器學習（ML）：將內部部署 ONTAP 資料複寫到 FSx for ONTAP，並建立 S3 存取點以支援雲端 AI 和 ML 訓練</block>
+  <block id="911879fb512486e8b5af8019b65a8205" category="list-text">*啟用清單表*：在磁碟區啟用清單表後，系統會為所有可透過 S3 存取點存取的物件產生元數據，並產生 AWS S3 請求費用。如需詳細資訊，請參閱<block ref="af9c8757ba81fcc825b028513d05dce7" category="inline-link-macro-rx"></block>。</block>
 </blocks>
