@@ -18,6 +18,16 @@ summary: 了解Amazon FSx for NetApp ONTAP中的新功能。
 
 
 
+== 2026 年 3 月 1 日
+
+
+
+=== FSx for ONTAP 檔案系統支援 NetApp Console 代理程式狀態
+
+NetApp Console 現在會顯示 Workloads 中 FSx for ONTAP 檔案系統的 Console 代理程式狀態。此狀態指示代理程式是否正在執行以及是否能夠與 FSx for ONTAP 檔案系統通訊。此資訊有助於您疑難排解連線問題。
+
+
+
 == 2026 年 2 月 16 日
 
 

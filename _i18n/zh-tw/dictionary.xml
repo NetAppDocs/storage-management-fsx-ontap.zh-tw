@@ -791,4 +791,7 @@
   <block id="fb042b7b99959e391eeb7c417511098a" category="section-title">2026 年 2 月 16 日</block>
   <block id="498aaff0cc400a96455ebb5b21ae7ffa" category="paragraph">若要使用此功能，<block ref="a00423c4266b8832da7ddbc75235d0cb" category="inline-link-macro-rx"></block>並選擇 *Migration* 作為使用案例。若要完成遷移過程，您必須<block ref="26b59663dcf673cfcdf7f1e6b23597f9" category="inline-link-macro-rx"></block>立即將資料和儲存 VM 組態設定永久遷移到目標 FSx for ONTAP 檔案系統。</block>
   <block id="df319eebb5e9e4cde194e1e976bf0795" category="list-text"><block ref="7a9cdee14fa6d629f0d48ed18525f6a5" category="inline-xref-macro-rx"></block> 將資料和組態設定從來源檔案系統永久遷移到目標 FSx for ONTAP 檔案系統。</block>
+  <block id="3acecbd4317d789f549785c17e6afb2c" category="doc">FSx for ONTAP 檔案系統支援 NetApp Console 代理程式狀態</block>
+  <block id="5088f4e07e6650891b34cd38ec19877b" category="paragraph">NetApp Console 現在會顯示 Workloads 中 FSx for ONTAP 檔案系統的 Console 代理程式狀態。此狀態指示代理程式是否正在執行以及是否能夠與 FSx for ONTAP 檔案系統通訊。此資訊有助於您疑難排解連線問題。</block>
+  <block id="4aa1f4ce7ff97e69b143fbe399631234" category="section-title">2026 年 3 月 1 日</block>
 </blocks>
